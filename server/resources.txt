@@ -1,0 +1,9 @@
+1) Cadastro de nome de usuário e senha
+
+2) Autenticação através de nome de usuário e senha
+
+3) Lista de restaurantes, sua respectiva avaliação e sua localização
+
+4) Cada restaurante possui seus respectivos itens à venda, podendo haver cadastro e remoção de produtos.
+
+5) Carrinho de compras, itens adicionáveis e removiveis.
