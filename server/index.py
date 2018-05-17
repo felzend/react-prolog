@@ -1,12 +1,17 @@
-# assertz -> Adiciona Regra
-# retract -> Remove Regra
-
 import json
 from pyswip import Prolog
+from flask import Flask, jsonify
 
 prolog = Prolog()
+app = Flask(__name__)
 
-def load_stores(pl):
+@app.route("/stores")
+def stores():
+    global prolog
+    stores = list(prolog.query("store(ID, NOME)"))
+    return jsonify(stores)
+
+def generate_stores(pl):
     if isinstance(pl, Prolog):
         stores = list ( json.load(open("stores.json")) )
         for i in range(0, len(stores)):
@@ -22,5 +27,17 @@ def load_stores(pl):
         return True
     return False
 
+def load_stores(pl):
+    if isinstance(pl, Prolog):
+        file = open("./assets/database.pl", "r") 
+        lines = file.read().split("\n")
+        for i in range(0, len(lines)):
+            assertion = lines[i].replace(".", "")
+            if len(assertion) == 0:
+                continue
+            pl.assertz(assertion)
+        return True
+    return False
+
 load_stores(prolog)
-print(list(prolog.query("store(ID, N), ID < 10")))
+app.run(threaded=True)
