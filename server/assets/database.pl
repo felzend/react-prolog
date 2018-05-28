@@ -3191,3 +3191,5 @@ product(187, "Maple Baked Pork Loin Roast", "http://img.recipepuppy.com/245.jpg"
 product(188, "Paprika Pork Roast", "http://img.recipepuppy.com/247.jpg").
 product(189, "Potato and Broccoli Casserole", "").
 product(190, "Pork Chop and Potato Casserole", "http://img.recipepuppy.com/250.jpg").
+
+stores(ID, NAME, LAT, LNG, RATING) :- store(ID, NAME), location(ID, LAT, LNG), rating(ID, RATING).

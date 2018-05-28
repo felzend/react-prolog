@@ -12,18 +12,20 @@ class HttpServerHandler(BaseHTTPRequestHandler):
 
     def _set_response(self):
         self.send_response(200)
+        self.send_header('Access-Control-Allow-Origin', '*')
         self.send_header('Content-type', 'text/html')
         self.end_headers()
 
     def _set_json_response(self):
         self.send_response(200)
+        self.send_header('Access-Control-Allow-Origin', '*')
         self.send_header('Content-type', 'application/json')
         self.end_headers()
 
     def do_GET(self):
         global pl
         if self.path == '/stores': # GET Stores
-            obj = list(pl.query("store(ID, NAME)"))
+            obj = list(pl.query("stores(Id, Name, Lat, Lng, Rating)"))
             self._set_json_response()
             self.wfile.write(json.dumps(obj).encode('utf-8'))
             return
@@ -38,8 +40,8 @@ class HttpServerHandler(BaseHTTPRequestHandler):
             self.wfile.write(json.dumps(obj).encode())
             return
 
-        self._set_response()
-        self.wfile.write("Prolog API's index.".format(self.path).encode('utf-8'))
+        #self._set_response()
+        #self.wfile.write("Prolog API's index.".format(self.path).encode('utf-8'))
 
     def do_POST(self): # TODO
         content_length = int(self.headers['Content-Length']) # <--- Gets the size of data
