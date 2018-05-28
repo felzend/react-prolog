@@ -1,9 +1,7 @@
-1) Cadastro de nome de usuário e senha
+﻿1) Cadastro e Login com User e Password
 
-2) Autenticação através de nome de usuário e senha
+2) Lista de restaurantes, sua respectiva avaliação e sua localização (https://mockaroo.com/)
 
-3) Lista de restaurantes, sua respectiva avaliação e sua localização (https://mockaroo.com/)
+3) Carrinho de compras
 
-4) Cada restaurante possui seus respectivos itens à venda, podendo haver cadastro e remoção de produtos. (http://www.recipepuppy.com/api)
-
-5) Carrinho de compras, itens adicionáveis e removiveis.
+4) Fechamento de vendas

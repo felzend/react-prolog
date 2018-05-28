@@ -7,18 +7,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<script type="text/javascript">
 		(function($) {
 			$(document).ready(function() {
+				var Store = { // Single Store
+					template: `
+						<div>
+							{{ store }}
+						<div>
+					`,
+					data: function() {
+						return {
+							store: {'teste': 25},
+						}
+					}
+				};
+				var Stores = { // Stores List
+					template: `
+						<div>
+							<div class="store" v-for="(store, index) in this.$parent.stores.slice(0,15)">
+								<div class="thumbnail">
+									<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7d8ZNgzbZWendnubFOmXhir5RX1ZDw4zNdHb16Zc5pTDM_nvVDw">
+								</div>
+								<div class="info">
+									<div class="name">{{ store.Name }}</div>
+									<div class="rating"><i class="far fa-star"></i> {{ store.Rating }}</div>
+								</div>
+							</div>
+						</div>
+					`,
+					data: function() {
+						return {
+
+						}
+					}
+				};
 				var app = new Vue({
 					el: "#app",
 					data: {
 						fetchURL: "http://localhost:4000",
 						foods: [],
 						stores: [],
+						currentView: 'store',
+					},
+					components: {
+						stores: Stores,
+						store: Store,
+					},
+					methods: {
+
 					},
 					watch: {
 						foods: function() {
@@ -32,6 +72,8 @@
 						//$.get("https://raw.githubusercontent.com/felzend/react-prolog/master/server/assets/foods.json", data => this.foods = JSON.parse(data));
 						//$.get("https://raw.githubusercontent.com/felzend/react-prolog/master/server/assets/stores.json", data => this.stores = JSON.parse(data));
 						$.get(this.fetchURL.concat("/stores"), data => this.stores = data);
+
+						console.log( this.components.$store );
 					}
 				})
 			})
@@ -65,16 +107,8 @@
 				</li>
 		  </ul>
 		</div>
-  	</nav>
-	<div class="store" v-for="store in stores.slice(0,15)">
-		<div class="thumbnail">
-			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7d8ZNgzbZWendnubFOmXhir5RX1ZDw4zNdHb16Zc5pTDM_nvVDw">
-		</div>
-		<div class="info">
-			<div class="name">{{ store.Name }}</div>
-			<div class="rating"><i class="far fa-star"></i> {{ store.Rating }}</div>
-		</div>
-	</div>
+	</nav>
+	<component :is="currentView"></component>
 </div>
 </body>
 </html>
