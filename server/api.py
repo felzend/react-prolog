@@ -31,7 +31,6 @@ class HttpServerHandler(BaseHTTPRequestHandler):
 
         if '/store' in self.path and 'id' in params: # GET store/{id}
             query = "store(StoreId, StoreName, StoreRating, ProductId, ProductName, ProductPhoto, ProductPrice, ProductAmount), StoreId = %d." % int(params['id'][0])
-            logging.info("Query: %s", query)
             obj = list(pl.query(query))
             self._set_json_response()
             self.wfile.write(json.dumps(obj).encode('utf-8'))
