@@ -13,7 +13,7 @@ store(12, 'Xerium Technologies, Inc.').
 store(13, 'FARO Technologies, Inc.').
 store(14, 'Guaranty Bancorp').
 store(15, 'Torchmark Corporation').
-store(16, 'Shoe Carnival, Inc.').
+store(16, 'shoe Carnival, Inc.').
 store(17, 'ATA Inc.').
 store(18, 'TRC Companies, Inc.').
 store(19, 'Cumberland Pharmaceuticals Inc.').
@@ -22,7 +22,7 @@ store(21, 'Invesco Mortgage Capital Inc.').
 store(22, 'Hostess Brands, Inc.').
 store(23, 'Consolidated Edison Inc').
 store(24, 'McCormick & Company, Incorporated').
-store(25, 'Solar Capital Ltd.').
+store(25, 'solar Capital Ltd.').
 store(26, 'Renesola Ltd.').
 store(27, 'Nuveen Enhanced Municipal Value Fund').
 store(28, 'Geo Group Inc (The)').
@@ -44,7 +44,7 @@ store(43, 'CSW Industrials, Inc.').
 store(44, 'Flaherty & Crumrine Preferred Income Fund Incorporated').
 store(45, 'Boston Private Financial Holdings, Inc.').
 store(46, 'Wheeler Real Estate Investment Trust, Inc.').
-store(47, 'Southern California Edison Company').
+store(47, 'southern California Edison Company').
 store(48, 'Global Partner Acquisition Corp.').
 store(49, 'Nuveen Multi-Market Income Fund').
 store(50, 'Cognex Corporation').
@@ -52,7 +52,7 @@ store(51, 'New York REIT, Inc.').
 store(52, 'ABIOMED, Inc.').
 store(53, 'Deutsch Bk Contingent Cap Tr V').
 store(54, 'Andina Acquisition Corp. II').
-store(55, 'Saratoga Investment Corp').
+store(55, 'saratoga Investment Corp').
 store(56, 'Echelon Corporation').
 store(57, 'iStar Financial Inc.').
 store(58, 'LaSalle Hotel Properties').
@@ -60,7 +60,7 @@ store(59, 'Interpace Diagnostics Group, Inc.').
 store(60, 'CRH PLC').
 store(61, 'Cedar Realty Trust, Inc.').
 store(62, 'Aegon NV').
-store(63, 'SunTrust Banks, Inc.').
+store(63, 'sunTrust Banks, Inc.').
 store(64, 'Omega Healthcare Investors, Inc.').
 store(65, 'WisdomTree Strategic Corporate Bond Fund').
 store(66, 'Aoxin Tianli Group, Inc.').
@@ -68,7 +68,7 @@ store(67, 'Old Second Bancorp, Inc.').
 store(68, 'Professional Diversity Network, Inc.').
 store(69, 'Ventas, Inc.').
 store(70, 'NIC Inc.').
-store(71, 'Sprint Corporation').
+store(71, 'sprint Corporation').
 store(72, 'Monolithic Power Systems, Inc.').
 store(73, 'First Trust Europe AlphaDEX Fund').
 store(74, 'Morgan Stanley Asia-Pacific Fund, Inc.').
@@ -79,7 +79,7 @@ store(78, 'Wells Fargo & Company').
 store(79, 'Old Dominion Freight Line, Inc.').
 store(80, 'HomeStreet, Inc.').
 store(81, 'Acadia Healthcare Company, Inc.').
-store(82, 'Stag Industrial, Inc.').
+store(82, 'stag Industrial, Inc.').
 store(83, 'DTE Energy Company').
 store(84, 'BlackRock New Jersey Municipal Income Trust').
 store(85, 'Axis Capital Holdings Limited').
@@ -94,7 +94,7 @@ store(93, 'Unit Corporation').
 store(94, 'Olympic Steel, Inc.').
 store(95, 'Global Self Storage, Inc.').
 store(96, 'KalVista Pharmaceuticals, Inc.').
-store(97, 'Synthetic Fixed-Income Securities, Inc.').
+store(97, 'synthetic Fixed-Income Securities, Inc.').
 store(98, 'A V Homes, Inc.').
 store(99, 'Astrotech Corporation').
 store(100, 'Albemarle Corporation').
@@ -143,7 +143,7 @@ store(142, 'Constellium N.V.').
 store(143, 'AmTrust Financial Services, Inc.').
 store(144, 'Turkish Investment Fund, Inc. (The)').
 store(145, 'Pope Resources').
-store(146, 'SINOPEC Shangai Petrochemical Company, Ltd.').
+store(146, 'sINOPEC Shangai Petrochemical Company, Ltd.').
 store(147, 'Gabelli NextShares Trust').
 store(148, 'Enterprise Products Partners L.P.').
 store(149, 'Western Alliance Bancorporation').
@@ -167,8 +167,8 @@ store(166, 'NCI Building Systems, Inc.').
 store(167, 'Merit Medical Systems, Inc.').
 store(168, 'Medley Capital Corporation').
 store(169, 'Quidel Corporation').
-store(170, 'STAAR Surgical Company').
-store(171, 'Stein Mart, Inc.').
+store(170, 'sTAAR Surgical Company').
+store(171, 'stein Mart, Inc.').
 store(172, 'J P Morgan Chase & Co').
 store(173, 'Assembly Biosciences, Inc.').
 store(174, 'PIMCO Municipal Income Fund III').
@@ -177,16 +177,16 @@ store(176, 'Lifetime Brands, Inc.').
 store(177, 'Centene Corporation').
 store(178, 'North Atlantic Drilling Ltd.').
 store(179, 'ARCA biopharma, Inc.').
-store(180, 'Sysco Corporation').
+store(180, 'sysco Corporation').
 store(181, 'Momenta Pharmaceuticals, Inc.').
-store(182, 'Sensus Healthcare, Inc.').
+store(182, 'sensus Healthcare, Inc.').
 store(183, 'Chesapeake Granite Wash Trust').
 store(184, 'ONEOK Partners, L.P.').
 store(185, 'Fibrocell Science Inc').
 store(186, 'Lennar Corporation').
 store(187, 'Threshold Pharmaceuticals, Inc.').
 store(188, 'Conduent Incorporated').
-store(189, 'SMTC Corporation').
+store(189, 'sMTC Corporation').
 store(190, 'Drive Shack Inc.').
 store(191, 'Lockheed Martin Corporation').
 store(192, 'Urstadt Biddle Properties Inc.').
@@ -197,7 +197,7 @@ store(196, 'Cross Country Healthcare, Inc.').
 store(197, 'Citizens Holding Company').
 store(198, 'Dell Technologies Inc.').
 store(199, 'AgroFresh Solutions, Inc.').
-store(200, 'ShotSpotter, Inc.').
+store(200, 'shotSpotter, Inc.').
 store(201, 'Pzena Investment Management Inc').
 store(202, 'Rightside Group, Ltd.').
 store(203, 'Tsakos Energy Navigation Ltd').
@@ -205,7 +205,7 @@ store(204, 'Astec Industries, Inc.').
 store(205, 'Neonode Inc.').
 store(206, 'The Health and Fitness ETF').
 store(207, 'Vuzix Corporation').
-store(208, 'Spartan Motors, Inc.').
+store(208, 'spartan Motors, Inc.').
 store(209, 'Western Digital Corporation').
 store(210, 'PS Business Parks, Inc.').
 store(211, 'PTC Inc.').
@@ -247,7 +247,7 @@ store(246, 'Dreyfus Municipal Bond Infrastructure Fund, Inc.').
 store(247, 'Westbury Bancorp, Inc.').
 store(248, 'iShares FTSE EPRA/NAREIT Global Real Estate ex-U.S. Index Fund').
 store(249, 'Buffalo Wild Wings, Inc.').
-store(250, 'Southcross Energy Partners, L.P.').
+store(250, 'southcross Energy Partners, L.P.').
 store(251, 'Nuveen Quality Municipal Income Fund').
 store(252, 'Blackrock MuniYield Pennsylvania Quality Fund').
 store(253, 'American Vanguard Corporation').
@@ -256,12 +256,12 @@ store(255, 'Hormel Foods Corporation').
 store(256, 'Mirna Therapeutics, Inc.').
 store(257, 'MRV Communications, Inc.').
 store(258, 'Elmira Savings Bank NY (The)').
-store(259, 'SandRidge Mississippian Trust II').
+store(259, 'sandRidge Mississippian Trust II').
 store(260, 'First Horizon National Corporation').
-store(261, 'Sonoma Pharmaceuticals, Inc.').
+store(261, 'sonoma Pharmaceuticals, Inc.').
 store(262, 'iPath US Treasury 10-year Bear ETN').
 store(263, 'Parker Drilling Company').
-store(264, 'S&W Seed Company').
+store(264, 'sEW Seed Company').
 store(265, 'International Speedway Corporation').
 store(266, 'Primo Water Corporation').
 store(267, 'Ameris Bancorp').
@@ -269,11 +269,11 @@ store(268, 'First Financial Corporation Indiana').
 store(269, 'Modern Media Acquisition Corp.').
 store(270, 'Citigroup Inc.').
 store(271, 'KB Financial Group Inc').
-store(272, 'Sterling Bancorp').
+store(272, 'sterling Bancorp').
 store(273, 'Navigant Consulting, Inc.').
 store(274, 'BioLineRx Ltd.').
 store(275, 'Pyxis Tankers Inc.').
-store(276, 'SCIENCE APPLICATIONS INTERNATIONAL CORPORATION').
+store(276, 'sCIENCE APPLICATIONS INTERNATIONAL CORPORATION').
 store(277, 'RXi Pharmaceuticals Corporation').
 store(278, 'eBay Inc.').
 store(279, 'Capitol Federal Financial, Inc.').
@@ -291,12 +291,12 @@ store(290, 'CyberArk Software Ltd.').
 store(291, 'BB&T Corporation').
 store(292, 'China Xiniya Fashion Limited').
 store(293, 'PennyMac Financial Services, Inc.').
-store(294, 'Syneron Medical Ltd.').
+store(294, 'syneron Medical Ltd.').
 store(295, 'PDF Solutions, Inc.').
-store(296, 'Stellar Acquisition III Inc.').
-store(297, 'Snap Inc.').
+store(296, 'stellar Acquisition III Inc.').
+store(297, 'snap Inc.').
 store(298, 'TESSCO Technologies Incorporated').
-store(299, 'Smart').
+store(299, 'smart').
 store(300, 'Energy Recovery, Inc.').
 store(301, 'Pebblebrook Hotel Trust').
 store(302, 'Tortoise Pipeline & Energy Fund, Inc.').
@@ -309,7 +309,7 @@ store(308, 'B. Riley Financial, Inc.').
 store(309, 'Corning Incorporated').
 store(310, 'Nuveen New York Municipal Value Fund, Inc.').
 store(311, 'Unisys Corporation').
-store(312, 'Saban Capital Acquisition Corp.').
+store(312, 'saban Capital Acquisition Corp.').
 store(313, 'Net Element, Inc.').
 store(314, 'Verona Pharma plc').
 store(315, 'Edwards Lifesciences Corporation').
@@ -320,8 +320,8 @@ store(319, 'Rennova Health, Inc.').
 store(320, 'Talend S.A.').
 store(321, 'BioShares Biotechnology Products Fund').
 store(322, 'Peapack-Gladstone Financial Corporation').
-store(323, 'Sysco Corporation').
-store(324, 'State Auto Financial Corporation').
+store(323, 'sysco Corporation').
+store(324, 'state Auto Financial Corporation').
 store(325, 'J & J Snack Foods Corp.').
 store(326, 'Maiden Holdings, Ltd.').
 store(327, 'POSCO').
@@ -353,7 +353,7 @@ store(352, 'VIVUS, Inc.').
 store(353, 'Nuveen Preferred Income Opportunites Fund').
 store(354, 'Taiwan Semiconductor Manufacturing Company Ltd.').
 store(355, 'VWR Corporation').
-store(356, 'Social Reality, Inc.').
+store(356, 'social Reality, Inc.').
 store(357, 'Barington/Hilco Acquisition Corp.').
 store(358, 'Ford Motor Company').
 store(359, 'Azure Power Global Limited').
@@ -363,8 +363,8 @@ store(362, 'IQ Chaikin U.S. Small Cap ETF').
 store(363, 'Global X S&P 500 Catholic Values ETF').
 store(364, 'eBay Inc.').
 store(365, 'Caseys General Stores, Inc.').
-store(366, 'Systemax Inc.').
-store(367, 'SB Financial Group, Inc.').
+store(366, 'systemax Inc.').
+store(367, 'sB Financial Group, Inc.').
 store(368, 'Alon USA Energy, Inc.').
 store(369, 'Nektar Therapeutics').
 store(370, 'Wayfair Inc.').
@@ -403,8 +403,8 @@ store(402, 'Colony NorthStar, Inc.').
 store(403, 'PartnerRe Ltd.').
 store(404, 'Trustmark Corporation').
 store(405, 'Carolina Financial Corporation').
-store(406, 'Source Capital, Inc.').
-store(407, 'Saban Capital Acquisition Corp.').
+store(406, 'source Capital, Inc.').
+store(407, 'saban Capital Acquisition Corp.').
 store(408, 'Function(x) Inc.').
 store(409, 'Leidos Holdings, Inc.').
 store(410, 'Waste Connections, Inc.').
@@ -451,7 +451,7 @@ store(450, 'Epizyme, Inc.').
 store(451, 'Macro Bank Inc.').
 store(452, 'Pioneer Energy Services Corp.').
 store(453, 'Ambarella, Inc.').
-store(454, 'Sunstone Hotel Investors, Inc.').
+store(454, 'sunstone Hotel Investors, Inc.').
 store(455, 'PDL BioPharma, Inc.').
 store(456, 'National CineMedia, Inc.').
 store(457, 'Insperity, Inc.').
@@ -462,7 +462,7 @@ store(461, 'Kite Pharma, Inc.').
 store(462, 'VWR Corporation').
 store(463, 'RELX PLC').
 store(464, 'First Community Financial Partners, Inc.').
-store(465, 'Sears Hometown and Outlet Stores, Inc.').
+store(465, 'sears Hometown and Outlet Stores, Inc.').
 store(466, 'Goldman Sachs Group, Inc. (The)').
 store(467, 'Forum Energy Technologies, Inc.').
 store(468, 'Turkish Investment Fund, Inc. (The)').
@@ -495,7 +495,7 @@ store(494, 'Poage Bankshares, Inc.').
 store(495, 'Amerco').
 store(496, 'Giga-tronics Incorporated').
 store(497, 'Public Storage').
-store(498, 'Scripps Networks Interactive, Inc').
+store(498, 'scripps Networks Interactive, Inc').
 store(499, 'Cisco Systems, Inc.').
 store(500, 'First Potomac Realty Trust').
 store(501, 'Gladstone Commercial Corporation').
@@ -509,7 +509,7 @@ store(508, 'iRhythm Technologies, Inc.').
 store(509, 'MCBC Holdings, Inc.').
 store(510, 'Lincoln Educational Services Corporation').
 store(511, 'RAIT Financial Trust').
-store(512, 'SunCoke Energy, Inc.').
+store(512, 'sunCoke Energy, Inc.').
 store(513, 'Nuveen High Income 2020 Target Term Fund').
 store(514, 'TripAdvisor, Inc.').
 store(515, 'BlackRock 2022 Global Income Opportunity Trust').
@@ -520,7 +520,7 @@ store(519, 'Teekay LNG Partners L.P.').
 store(520, 'Medovex Corp.').
 store(521, 'Barclays PLC').
 store(522, 'Johnson & Johnson').
-store(523, 'Selective Insurance Group, Inc.').
+store(523, 'selective Insurance Group, Inc.').
 store(524, 'Chunghwa Telecom Co., Ltd.').
 store(525, 'Axar Acquisition Corp.').
 store(526, 'Erie Indemnity Company').
@@ -544,7 +544,7 @@ store(543, 'PHH Corp').
 store(544, 'Crown Crafts, Inc.').
 store(545, 'Nuveen California Municipal Value Fund 2').
 store(546, 'Aircastle Limited').
-store(547, 'Senior Housing Properties Trust').
+store(547, 'senior Housing Properties Trust').
 store(548, 'Ecolab Inc.').
 store(549, 'Public Storage').
 store(550, 'Fate Therapeutics, Inc.').
@@ -593,7 +593,7 @@ store(592, 'Aviragen Therapeutics, Inc.').
 store(593, 'Nanometrics Incorporated').
 store(594, 'General Finance Corporation').
 store(595, 'Function(x) Inc.').
-store(596, 'SandRidge Energy, Inc.').
+store(596, 'sandRidge Energy, Inc.').
 store(597, 'Citizens & Northern Corp').
 store(598, 'Arcos Dorados Holdings Inc.').
 store(599, 'Fonar Corporation').
@@ -603,9 +603,9 @@ store(602, 'Bioanalytical Systems, Inc.').
 store(603, 'Global Partner Acquisition Corp.').
 store(604, 'BB&T Corporation').
 store(605, 'Cempra, Inc.').
-store(606, 'Sony Corp Ord').
+store(606, 'sony Corp Ord').
 store(607, 'Continental Resources, Inc.').
-store(608, 'South State Corporation').
+store(608, 'south State Corporation').
 store(609, 'Vanguard Russell 2000 Value ETF').
 store(610, 'iRadimed Corporation').
 store(611, 'TrueCar, Inc.').
@@ -639,7 +639,7 @@ store(638, 'Innovative Solutions and Support, Inc.').
 store(639, 'Infinity Pharmaceuticals, Inc.').
 store(640, 'Caesars Acquisition Company').
 store(641, 'Validus Holdings, Ltd.').
-store(642, 'Sibanye Gold Limited').
+store(642, 'sibanye Gold Limited').
 store(643, 'Imprimis Pharmaceuticals, Inc.').
 store(644, 'UGI Corporation').
 store(645, 'ePlus inc.').
@@ -674,15 +674,15 @@ store(673, 'Blackrock MuniYield California Fund, Inc.').
 store(674, 'Wright Medical Group N.V.').
 store(675, 'Community Bank System, Inc.').
 store(676, 'LendingTree, Inc.').
-store(677, 'SPDR Dorsey Wright Fixed Income Allocation ETF').
+store(677, 'sPDR Dorsey Wright Fixed Income Allocation ETF').
 store(678, 'Nuveen NASDAQ 100 Dynamic Overwrite Fund').
 store(679, 'PowerShares BuyBack Achievers Portfolio').
 store(680, 'CorEnergy Infrastructure Trust, Inc.').
 store(681, 'Crossroads Systems, Inc.').
 store(682, 'Trinseo S.A.').
 store(683, 'Alliance HealthCare Services, Inc.').
-store(684, 'SmartFinancial, Inc.').
-store(685, 'Silver Run Acquisition Corporation II').
+store(684, 'smartFinancial, Inc.').
+store(685, 'silver Run Acquisition Corporation II').
 store(686, 'Blue Capital Reinsurance Holdings Ltd.').
 store(687, 'Macerich Company (The)').
 store(688, 'Entergy Louisiana, Inc.').
@@ -710,7 +710,7 @@ store(709, 'Modern Media Acquisition Corp.').
 store(710, 'PartnerRe Ltd.').
 store(711, 'Williams Partners LP').
 store(712, 'Nivalis Therapeutics, Inc.').
-store(713, 'Seneca Foods Corp.').
+store(713, 'seneca Foods Corp.').
 store(714, 'Bio-Rad Laboratories, Inc.').
 store(715, 'Tiffany & Co.').
 store(716, 'Cathay General Bancorp').
@@ -732,11 +732,11 @@ store(731, 'Banco Bradesco Sa').
 store(732, 'Pfizer, Inc.').
 store(733, 'Lennar Corporation').
 store(734, 'Blackrock MuniEnhanced Fund, Inc.').
-store(735, 'SJW Group').
+store(735, 'sJW Group').
 store(736, 'Arcos Dorados Holdings Inc.').
 store(737, 'Civista Bancshares, Inc. ').
 store(738, 'Marine Products Corporation').
-store(739, 'SmartFinancial, Inc.').
+store(739, 'smartFinancial, Inc.').
 store(740, 'BlackRock Science and Technology Trust').
 store(741, 'Jacksonville Bancorp Inc.').
 store(742, 'Hawaiian Holdings, Inc.').
@@ -766,7 +766,7 @@ store(765, 'Ramco-Gershenson Properties Trust').
 store(766, 'Gabelli Global Small and Mid Cap Value Trust (The)').
 store(767, 'Enbridge Energy, L.P.').
 store(768, 'aTyr Pharma, Inc.').
-store(769, 'Silvercrest Asset Management Group Inc.').
+store(769, 'silvercrest Asset Management Group Inc.').
 store(770, 'Jernigan Capital, Inc.').
 store(771, 'EnerNOC, Inc.').
 store(772, 'Blackrock Global').
@@ -776,7 +776,7 @@ store(775, 'PartnerRe Ltd.').
 store(776, 'TrovaGene, Inc.').
 store(777, 'Corium International, Inc.').
 store(778, 'Orthofix International N.V.').
-store(779, 'Sealed Air Corporation').
+store(779, 'sealed Air Corporation').
 store(780, 'Watsco, Inc.').
 store(781, 'Dover Motorsports, Inc.').
 store(782, 'Qumu Corporation').
@@ -806,7 +806,7 @@ store(805, 'e.l.f. Beauty, Inc.').
 store(806, 'Air Lease Corporation').
 store(807, 'Dataram Corporation').
 store(808, 'Analogic Corporation').
-store(809, 'Synchrony Financial').
+store(809, 'synchrony Financial').
 store(810, 'National Energy Services Reunited Corp.').
 store(811, 'Nuveen S&P 500 Buy-Write Income Fund').
 store(812, 'Range Resources Corporation').
@@ -817,7 +817,7 @@ store(816, 'Morgan Stanley Emerging Markets Debt Fund, Inc.').
 store(817, 'Macerich Company (The)').
 store(818, 'CIRCOR International, Inc.').
 store(819, 'B&G Foods, Inc.').
-store(820, 'South State Corporation').
+store(820, 'south State Corporation').
 store(821, 'Boot Barn Holdings, Inc.').
 store(822, 'WSFS Financial Corporation').
 store(823, 'iShares MSCI EAFE ESG Optimized ETF').
@@ -828,19 +828,19 @@ store(827, 'Griffin Industrial Realty, Inc.').
 store(828, 'Banc of California, Inc.').
 store(829, 'Ares Capital Corporation').
 store(830, 'Aerie Pharmaceuticals, Inc.').
-store(831, 'Schlumberger N.V.').
+store(831, 'schlumberger N.V.').
 store(832, 'PBF Logistics LP').
 store(833, 'Ducommun Incorporated').
 store(834, 'Gladstone Commercial Corporation').
-store(835, 'ServiceNow, Inc.').
+store(835, 'serviceNow, Inc.').
 store(836, 'Ennis, Inc.').
 store(837, 'Horizons NASDAQ-100 Covered Call ETF').
 store(838, 'ProPhase Labs, Inc.').
 store(839, 'Halyard Health, Inc.').
 store(840, 'Flaherty & Crumrine Dynamic Preferred and Income Fund Inc.').
 store(841, 'FSB Bancorp, Inc.').
-store(842, 'Spherix Incorporated').
-store(843, 'Stewardship Financial Corp').
+store(842, 'spherix Incorporated').
+store(843, 'stewardship Financial Corp').
 store(844, 'HC2 Holdings, Inc.').
 store(845, 'China Online Education Group').
 store(846, 'Blue Buffalo Pet Products, Inc.').
@@ -849,12 +849,12 @@ store(848, 'Real Goods Solar, Inc.').
 store(849, 'iShares S&P Emerging Markets Infrastructure Index Fund').
 store(850, 'Colony NorthStar, Inc.').
 store(851, 'Brookfield Renewable Partners L.P.').
-store(852, 'Sun Hydraulics Corporation').
+store(852, 'sun Hydraulics Corporation').
 store(853, 'Lifevantage Corporation').
 store(854, 'National Oilwell Varco, Inc.').
 store(855, 'Navios Maritime Holdings Inc.').
 store(856, 'Global Ship Lease, Inc.').
-store(857, 'SciClone Pharmaceuticals, Inc.').
+store(857, 'sciClone Pharmaceuticals, Inc.').
 store(858, 'Encana Corporation').
 store(859, 'Apollo Investment Corporation').
 store(860, 'Heartland Express, Inc.').
@@ -868,7 +868,7 @@ store(867, 'KalVista Pharmaceuticals, Inc.').
 store(868, 'Express Scripts Holding Company').
 store(869, 'Leucadia National Corporation').
 store(870, 'Universal Technical Institute Inc').
-store(871, 'Sunstone Hotel Investors, Inc.').
+store(871, 'sunstone Hotel Investors, Inc.').
 store(872, 'W.R. Berkley Corporation').
 store(873, 'Cushing Energy Income Fund (The)').
 store(874, 'Aspen Aerogels, Inc.').
@@ -878,14 +878,14 @@ store(877, 'American Superconductor Corporation').
 store(878, 'Gladstone Land Corporation').
 store(879, 'The Blackstone Group L.P.').
 store(880, 'Aurinia Pharmaceuticals Inc').
-store(881, 'Superior Industries International, Inc.').
+store(881, 'superior Industries International, Inc.').
 store(882, 'XOMA Corporation').
 store(883, 'Envision Healthcare Corporation').
-store(884, 'Seadrill Partners LLC').
-store(885, 'Synchronoss Technologies, Inc.').
+store(884, 'seadrill Partners LLC').
+store(885, 'synchronoss Technologies, Inc.').
 store(886, 'J. Jill, Inc.').
 store(887, 'Turkcell Iletisim Hizmetleri AS').
-store(888, 'Summit Financial Group, Inc.').
+store(888, 'summit Financial Group, Inc.').
 store(889, 'Westmoreland Coal Company').
 store(890, 'Central Europe, Russia and Turkey Fund, Inc. (The)').
 store(891, 'MutualFirst Financial Inc.').
@@ -896,7 +896,7 @@ store(895, 'Old Second Bancorp, Inc.').
 store(896, 'Essex Property Trust, Inc.').
 store(897, 'Horizon Bancorp (IN)').
 store(898, 'Computer Task Group, Incorporated').
-store(899, 'Shinhan Financial Group Co Ltd').
+store(899, 'shinhan Financial Group Co Ltd').
 store(900, 'Enbridge Inc').
 store(901, 'Matthews International Corporation').
 store(902, 'Cott Corporation').
@@ -921,14 +921,14 @@ store(920, 'Landmark Infrastructure Partners LP').
 store(921, 'Recro Pharma, Inc.').
 store(922, 'First Northwest Bancorp').
 store(923, 'Digimarc Corporation').
-store(924, 'State Street Corporation').
+store(924, 'state Street Corporation').
 store(925, 'AMERISAFE, Inc.').
 store(926, 'Kimco Realty Corporation').
 store(927, 'RadNet, Inc.').
 store(928, 'Templeton Global Income Fund, Inc.').
 store(929, 'Yandex N.V.').
 store(930, 'BGC Partners, Inc.').
-store(931, 'Sangamo Therapeutics, Inc.').
+store(931, 'sangamo Therapeutics, Inc.').
 store(932, 'Navistar International Corporation').
 store(933, 'VEREIT Inc.').
 store(934, 'CBL & Associates Properties, Inc.').
@@ -947,7 +947,7 @@ store(946, 'iPass Inc.').
 store(947, 'Blackbaud, Inc.').
 store(948, 'Patheon N.V.').
 store(949, 'Ligand Pharmaceuticals Incorporated').
-store(950, 'SMTC Corporation').
+store(950, 'sMTC Corporation').
 store(951, 'FibroGen, Inc').
 store(952, 'Gabelli NextShares Trust').
 store(953, 'RAIT Financial Trust').
@@ -976,14 +976,14 @@ store(975, 'Citizens Financial Group, Inc.').
 store(976, 'Alere Inc.').
 store(977, 'Investors Bancorp, Inc.').
 store(978, 'Blackstone GSO Senior Floating Rate Term Fund').
-store(979, 'Synthetic Fixed-Income Securities, Inc.').
+store(979, 'synthetic Fixed-Income Securities, Inc.').
 store(980, 'Provident Bancorp, Inc.').
 store(981, 'IXYS Corporation').
 store(982, 'LyondellBasell Industries NV').
 store(983, 'Duke Energy Corporation').
 store(984, 'Kimco Realty Corporation').
 store(985, 'Oxford Lane Capital Corp.').
-store(986, 'SEACOR Holdings, Inc.').
+store(986, 'sEACOR Holdings, Inc.').
 store(987, 'Biogen Inc.').
 store(988, 'HSN, Inc.').
 store(989, 'Terreno Realty Corporation').
@@ -997,7 +997,7 @@ store(996, 'Bojangles&#39;, Inc.').
 store(997, 'Harvest Capital Credit Corporation').
 store(998, 'Key Energy Services, Inc.').
 store(999, 'Bonso Electronics International, Inc.').
-store(1000, 'SI Financial Group, Inc.').
+store(1000, 'sI Financial Group, Inc.').
 
 rating(1, 4.40).
 rating(2, 3.90).
@@ -3001,195 +3001,1198 @@ location(998, 26.571674, 117.669428).
 location(999, 35.849170, 14.503060).
 location(1000, 10.630446, 122.977964).
 
-product(1, "Ginger Champagne", "http://img.recipepuppy.com/1.jpg").
-product(2, "Potato and Cheese Frittata", "http://img.recipepuppy.com/2.jpg").
-product(3, "Eggnog Thumbprints", "http://img.recipepuppy.com/3.jpg").
-product(4, "Succulent Pork Roast", "http://img.recipepuppy.com/4.jpg").
-product(5, "Irish Champ", "http://img.recipepuppy.com/5.jpg").
-product(6, "Chocolate-Cherry Thumbprints", "http://img.recipepuppy.com/6.jpg").
-product(7, "Mean Woman Pasta", "http://img.recipepuppy.com/7.jpg").
-product(8, "Hot Spiced Cider", "http://img.recipepuppy.com/8.jpg").
-product(9, "Isa's Cola de Mono", "http://img.recipepuppy.com/9.jpg").
-product(10, "Amy's Barbecue Chicken Salad", "http://img.recipepuppy.com/20.jpg").
-product(11, "Mushroom Pork Chops", "http://img.recipepuppy.com/11.jpg").
-product(12, "Maryland Crab Cakes I", "http://img.recipepuppy.com/12.jpg").
-product(13, "Black-Eyed Peas and Gumbo", "http://img.recipepuppy.com/13.jpg").
-product(14, "Pork and Shrimp Pancit", "http://img.recipepuppy.com/14.jpg").
-product(15, "Cranberry Gelatin Salad I", "http://img.recipepuppy.com/15.jpg").
-product(16, "Mocha Chocolate Chip Banana Muffins", "http://img.recipepuppy.com/16.jpg").
-product(17, "Onion Chicken in Balsamic Sauce", "http://img.recipepuppy.com/17.jpg").
-product(18, "Au Gratin Party Potatoes", "http://img.recipepuppy.com/18.jpg").
-product(19, "Chicken and Potato Parcels", "http://img.recipepuppy.com/19.jpg").
-product(20, "Golden Wedding Punch", "http://img.recipepuppy.com/20.jpg").
-product(21, "Asparagus and Mushroom Frittata", "http://img.recipepuppy.com/21.jpg").
-product(22, "Honey Of An Oatmeal Bread", "http://img.recipepuppy.com/22.jpg").
-product(23, "Cinnamon Rolls III", "http://img.recipepuppy.com/23.jpg").
-product(24, "Soft, Moist and Gooey Cinnamon Buns", "http://img.recipepuppy.com/24.jpg").
-product(25, "Cinnamon Rolls II", "http://img.recipepuppy.com/25.jpg").
-product(26, "Essence of Bread", "").
-product(27, "Clone of a Cinnabon", "http://img.recipepuppy.com/28.jpg").
-product(28, "Ginger Grant", "").
-product(29, "Champagne Punch III", "http://img.recipepuppy.com/30.jpg").
-product(30, "Champagne Punch II", "").
-product(31, "Ginger Martini", "").
-product(32, "Nan's Potato and Egg Frittata", "http://img.recipepuppy.com/35.jpg").
-product(33, "Ukraine Baked Potato Salad", "").
-product(34, "Cheese and Bacon Potato Balls", "http://img.recipepuppy.com/37.jpg").
-product(35, "Cheese Potato Puff", "http://img.recipepuppy.com/38.jpg").
-product(36, "Swiss Cheese Potato Pancakes", "http://img.recipepuppy.com/39.jpg").
-product(37, "Apricot Cream Cheese Thumbprints", "http://img.recipepuppy.com/41.jpg").
-product(38, "Chocolate Thumbprints II", "http://img.recipepuppy.com/42.jpg").
-product(39, "Raspberry and Almond Shortbread Thumbprints", "http://img.recipepuppy.com/43.jpg").
-product(40, "Chocolate Thumbprints I", "").
-product(41, "Jam Thumbprints", "http://img.recipepuppy.com/45.jpg").
-product(42, "Vini's Pork Roast", "").
-product(43, "Don Struble's Puerto Rican Pork Roast", "").
-product(44, "Betty's Pork Roast", "").
-product(45, "Bohemian Pork Roast", "").
-product(46, "Orange Ginger Pork Roast", "http://img.recipepuppy.com/51.jpg").
-product(47, "Irish Potato Casserole", "").
-product(48, "Linda's Irish Shepherd's Pie", "http://img.recipepuppy.com/54.jpg").
-product(49, "Irish Potato Farls", "http://img.recipepuppy.com/55.jpg").
-product(50, "Irish Stew", "http://img.recipepuppy.com/56.jpg").
-product(51, "Vegetable Soup - Irish Style", "").
-product(52, "Tyler's Raspberry Thumbprints with White Chocolate Glaze", "http://img.recipepuppy.com/59.jpg").
-product(53, "Oatmeal Thumbprints", "http://img.recipepuppy.com/60.jpg").
-product(54, "Fresh Tomato Pasta", "http://img.recipepuppy.com/62.jpg").
-product(55, "Spinach and Pasta Shells", "http://img.recipepuppy.com/63.jpg").
-product(56, "Bowtie Pasta", "http://img.recipepuppy.com/64.jpg").
-product(57, "Tony's Summer Pasta", "").
-product(58, "Pasta and Beans", "").
-product(59, "Hot Spiced Cranberry Cider", "http://img.recipepuppy.com/68.jpg").
-product(60, "Hot Buttered Apple Cider", "http://img.recipepuppy.com/69.jpg").
-product(61, "Hot Apple Cider", "http://img.recipepuppy.com/70.jpg").
-product(62, "Hot Spiked Cider", "http://img.recipepuppy.com/71.jpg").
-product(63, "Cider Wassail", "http://img.recipepuppy.com/72.jpg").
-product(64, "Piscola", "").
-product(65, "Vaina", "").
-product(66, "Chocoholic's Nightcap", "http://img.recipepuppy.com/76.jpg").
-product(67, "Chilean Cocktail", "").
-product(68, "Egg Nog", "http://img.recipepuppy.com/78.jpg").
-product(69, "Caribbean Chicken Salad", "http://img.recipepuppy.com/80.jpg").
-product(70, "Southwest Chicken Salad II", "").
-product(71, "Southwest Chicken Salad I", "http://img.recipepuppy.com/82.jpg").
-product(72, "Lime Grilled Chicken Caesar Salad", "http://img.recipepuppy.com/83.jpg").
-product(73, "Pecan Crusted Chicken Salad", "http://img.recipepuppy.com/84.jpg").
-product(74, "Pork Chops with Sour Cream and Mushroom Sauce", "http://img.recipepuppy.com/86.jpg").
-product(75, "Mushroom Sauce Baked Pork Chops", "http://img.recipepuppy.com/87.jpg").
-product(76, "Pork Chops with Mushroom Onion Gravy", "http://img.recipepuppy.com/88.jpg").
-product(77, "Grandma's Pork Chops in Mushroom Gravy", "http://img.recipepuppy.com/89.jpg").
-product(78, "Pork Chops with Burgundy Mushroom Sauce", "http://img.recipepuppy.com/90.jpg").
-product(79, "Maryland Crab Cakes II", "http://img.recipepuppy.com/92.jpg").
-product(80, "True Maryland Crab Cakes", "").
-product(81, "Baked Maryland Lump Crab Cakes", "http://img.recipepuppy.com/94.jpg").
-product(82, "Maryland Crab Cakes III", "http://img.recipepuppy.com/95.jpg").
-product(83, "New England Crab Cakes", "http://img.recipepuppy.com/96.jpg").
-product(84, "Creole Black-Eyed Peas and Rice", "http://img.recipepuppy.com/98.jpg").
-product(85, "Sweet and Spicy Soup with Black-Eyed Peas and Sweet Potato", "").
-product(86, "Shrimp Gumbo", "").
-product(87, "Big Charlie's Gumbo", "http://img.recipepuppy.com/101.jpg").
-product(88, "Chicken Andouille Gumbo", "http://img.recipepuppy.com/102.jpg").
-product(89, "Cantonese Style Pork and Shrimp Dumplings", "http://img.recipepuppy.com/104.jpg").
-product(90, "Pancit", "http://img.recipepuppy.com/105.jpg").
-product(91, "Spicy Garlic and Pepper Shrimp", "http://img.recipepuppy.com/106.jpg").
-product(92, "Shrimp Pad Thai", "http://img.recipepuppy.com/107.jpg").
-product(93, "Ground Pork Cake with Salty Egg (Haam Daan Ju Yoke Beng)", "http://img.recipepuppy.com/108.jpg").
-product(94, "Moore's Cranberry Gelatin Salad", "").
-product(95, "Cranberry Gelatin Salad", "http://img.recipepuppy.com/111.jpg").
-product(96, "Moore's Cranberry Gelatin Salad", "").
-product(97, "Cranberry Gelatin Salad II", "").
-product(98, "Eggnog and Cranberry Salad", "").
-product(99, "Chocolate Chip Banana Muffins", "http://img.recipepuppy.com/116.jpg").
-product(100, "Banana Chip Muffins I", "http://img.recipepuppy.com/117.jpg").
-product(101, "Banana Chocolate Chip Muffins", "http://img.recipepuppy.com/118.jpg").
-product(102, "Chocolate Chip Banana Muffins", "http://img.recipepuppy.com/119.jpg").
-product(103, "Fudgy Chocolate Chip Muffins", "http://img.recipepuppy.com/120.jpg").
-product(104, "Chicken Breasts in Caper Cream Sauce", "http://img.recipepuppy.com/122.jpg").
-product(105, "Mushroom-Stuffed Chicken Breasts in a Balsamic Pan Sauce", "").
-product(106, "Veggies and Chicken in Cream Sauce", "").
-product(107, "Nancy's Chicken in Puff Pastry", "http://img.recipepuppy.com/125.jpg").
-product(108, "Chicken in Onion and Mustard Sauce", "").
-product(109, "Rosemary Au Gratin Potatoes", "http://img.recipepuppy.com/127.jpg").
-product(110, "Vegan Potatoes au Gratin", "").
-product(111, "Cheddar Mashed Potatoes", "http://img.recipepuppy.com/129.jpg").
-product(112, "Potatoes and Carrots Au Gratin", "http://img.recipepuppy.com/130.jpg").
-product(113, "Scalloped Cheese Potatoes", "http://img.recipepuppy.com/131.jpg").
-product(114, "Salsa Chicken and Potato Packets", "").
-product(115, "Cheesy Chicken and Potato Casserole", "http://img.recipepuppy.com/134.jpg").
-product(116, "Red Potato Chicken", "http://img.recipepuppy.com/135.jpg").
-product(117, "Chicken Potato Salad", "").
-product(118, "Underground Baked Chicken and Potatoes", "").
-product(119, "Wedding Day Punch", "").
-product(120, "Golden Glow Fruit Punch", "").
-product(121, "Green Punch", "").
-product(122, "Mint Tea Punch", "http://img.recipepuppy.com/142.jpg").
-product(123, "Tart and Bubbly Wedding Punch", "http://img.recipepuppy.com/143.jpg").
-product(124, "Asparagus and Mushroom Puff Pastry Pie", "http://img.recipepuppy.com/145.jpg").
-product(125, "Asparagus Quiche", "http://img.recipepuppy.com/146.jpg").
-product(126, "Asparagus Frittata", "http://img.recipepuppy.com/147.jpg").
-product(127, "Asparagus Mushroom Casserole", "http://img.recipepuppy.com/148.jpg").
-product(128, "Spinach and Mushroom Frittata", "http://img.recipepuppy.com/149.jpg").
-product(129, "Honey Oatmeal Bread II", "http://img.recipepuppy.com/151.jpg").
-product(130, "Oatmeal Bread II", "http://img.recipepuppy.com/152.jpg").
-product(131, "Bruce's Honey Sesame Bread", "http://img.recipepuppy.com/153.jpg").
-product(132, "Butter Honey Wheat Bread", "http://img.recipepuppy.com/154.jpg").
-product(133, "Sweet Honey French Bread", "http://img.recipepuppy.com/155.jpg").
-product(134, "Ninety Minute Cinnamon Rolls", "http://img.recipepuppy.com/157.jpg").
-product(135, "Moist Cinnamon Rolls", "http://img.recipepuppy.com/158.jpg").
-product(136, "Cinnamon Rolls I", "http://img.recipepuppy.com/159.jpg").
-product(137, "Cinnamon Rolls II", "http://img.recipepuppy.com/160.jpg").
-product(138, "Cinnamon Buns", "http://img.recipepuppy.com/162.jpg").
-product(139, "Cinnamon Raisin Bread II", "http://img.recipepuppy.com/163.jpg").
-product(140, "Cinnamon Bread II", "http://img.recipepuppy.com/164.jpg").
-product(141, "Mom's Good Cinnamon Rolls", "http://img.recipepuppy.com/166.jpg").
-product(142, "Overnight Cinnamon Rolls I", "http://img.recipepuppy.com/167.jpg").
-product(143, "Mother's Cinnamon Rolls", "http://img.recipepuppy.com/168.jpg").
-product(144, "Grandma VanDoren's White Bread", "http://img.recipepuppy.com/170.jpg").
-product(145, "Fresh Yeast Bread", "").
-product(146, "Traditional White Bread", "http://img.recipepuppy.com/172.jpg").
-product(147, "Onion Bread II", "http://img.recipepuppy.com/173.jpg").
-product(148, "Sazerac", "http://img.recipepuppy.com/175.jpg").
-product(149, "Classic Old Fashioned", "").
-product(150, "Liquid Valium", "http://img.recipepuppy.com/177.jpg").
-product(151, "Mulled Apple Champagne Punch", "").
-product(152, "Champagne Peach Punch", "").
-product(153, "Juicy Fruit Punch with Champagne", "").
-product(154, "New Year's Champagne Punch", "http://img.recipepuppy.com/185.jpg").
-product(155, "Carmel Apple Martini", "").
-product(156, "Espresso Martini", "").
-product(157, "Joan's Pomegranate Martini", "").
-product(158, "Concord Cosmopolitan Martini", "").
-product(159, "Potato Skillet", "http://img.recipepuppy.com/193.jpg").
-product(160, "American Frittata", "http://img.recipepuppy.com/194.jpg").
-product(161, "Kielbasa and Potato Bake", "http://img.recipepuppy.com/195.jpg").
-product(162, "Potato and Bread Cutlets", "").
-product(163, "Indiana Potato Salad", "").
-product(164, "Baked Potato Salad II", "http://img.recipepuppy.com/199.jpg").
-product(165, "Yummy Yellow Taters", "http://img.recipepuppy.com/200.jpg").
-product(166, "Baked Potato Salad with Dill", "").
-product(167, "Bacon, Potato and Cheese Tart", "http://img.recipepuppy.com/203.jpg").
-product(168, "Grilled Cheese and Bacon Potatoes", "http://img.recipepuppy.com/204.jpg").
-product(169, "Cheese and Bacon Potato Rounds", "http://img.recipepuppy.com/205.jpg").
-product(170, "Potato Cheese Casserole", "http://img.recipepuppy.com/206.jpg").
-product(171, "Potato Puff Casserole", "http://img.recipepuppy.com/208.jpg").
-product(172, "Old-Fashioned Cheese Potatoes", "http://img.recipepuppy.com/209.jpg").
-product(173, "Golden Potato Rounds", "").
-product(174, "Old-Fashioned Potato Pancakes", "http://img.recipepuppy.com/212.jpg").
-product(175, "Crispy Potato Pancakes", "http://img.recipepuppy.com/213.jpg").
-product(176, "Confetti Potato Pancakes", "").
-product(177, "Potato Pancakes", "http://img.recipepuppy.com/215.jpg").
-product(178, "Cream Cheese Christmas Cookies", "").
-product(179, "Pistachio Cream Cheese Fingers", "http://img.recipepuppy.com/218.jpg").
-product(180, "Cream Cheese Sugar Cookies", "http://img.recipepuppy.com/219.jpg").
-product(181, "Blue Cheese and Red Onion Jam Crescent Thumbprints", "http://img.recipepuppy.com/234.jpg").
-product(182, "Chinese Roast Pork", "http://img.recipepuppy.com/236.jpg").
-product(183, "Puerto Rican Pork Roast", "http://img.recipepuppy.com/238.jpg").
-product(184, "Spicy Honey Mustard Pork Roast", "http://img.recipepuppy.com/240.jpg").
-product(185, "Fruit Glazed Pork Roast", "").
-product(186, "Cindy's Country Style Creole Pork Roast", "http://img.recipepuppy.com/244.jpg").
-product(187, "Maple Baked Pork Loin Roast", "http://img.recipepuppy.com/245.jpg").
-product(188, "Paprika Pork Roast", "http://img.recipepuppy.com/247.jpg").
-product(189, "Potato and Broccoli Casserole", "").
-product(190, "Pork Chop and Potato Casserole", "http://img.recipepuppy.com/250.jpg").
+product(1, 'Ginger Champagne', 'http://img.recipepuppy.com/1.jpg').
+product(2, 'Potato and Cheese Frittata', 'http://img.recipepuppy.com/2.jpg').
+product(3, 'Eggnog Thumbprints', 'http://img.recipepuppy.com/3.jpg').
+product(4, 'succulent Pork Roast', 'http://img.recipepuppy.com/4.jpg').
+product(5, 'Irish Champ', 'http://img.recipepuppy.com/5.jpg').
+product(6, 'Chocolate-Cherry Thumbprints', 'http://img.recipepuppy.com/6.jpg').
+product(7, 'Mean Woman Pasta', 'http://img.recipepuppy.com/7.jpg').
+product(8, 'Hot Spiced Cider', 'http://img.recipepuppy.com/8.jpg').
+product(9, 'Isas Cola de Mono', 'http://img.recipepuppy.com/9.jpg').
+product(10, 'Amys Barbecue Chicken Salad', 'http://img.recipepuppy.com/20.jpg').
+product(11, 'Mushroom Pork Chops', 'http://img.recipepuppy.com/11.jpg').
+product(12, 'Maryland Crab Cakes I', 'http://img.recipepuppy.com/12.jpg').
+product(13, 'Black-Eyed Peas and Gumbo', 'http://img.recipepuppy.com/13.jpg').
+product(14, 'Pork and Shrimp Pancit', 'http://img.recipepuppy.com/14.jpg').
+product(15, 'Cranberry Gelatin Salad I', 'http://img.recipepuppy.com/15.jpg').
+product(16, 'Mocha Chocolate Chip Banana Muffins', 'http://img.recipepuppy.com/16.jpg').
+product(17, 'Onion Chicken in Balsamic Sauce', 'http://img.recipepuppy.com/17.jpg').
+product(18, 'Au Gratin Party Potatoes', 'http://img.recipepuppy.com/18.jpg').
+product(19, 'Chicken and Potato Parcels', 'http://img.recipepuppy.com/19.jpg').
+product(20, 'Golden Wedding Punch', 'http://img.recipepuppy.com/20.jpg').
+product(21, 'Asparagus and Mushroom Frittata', 'http://img.recipepuppy.com/21.jpg').
+product(22, 'Honey Of An Oatmeal Bread', 'http://img.recipepuppy.com/22.jpg').
+product(23, 'Cinnamon Rolls III', 'http://img.recipepuppy.com/23.jpg').
+product(24, 'soft, Moist and Gooey Cinnamon Buns', 'http://img.recipepuppy.com/24.jpg').
+product(25, 'Cinnamon Rolls II', 'http://img.recipepuppy.com/25.jpg').
+product(26, 'Essence of Bread', '').
+product(27, 'Clone of a Cinnabon', 'http://img.recipepuppy.com/28.jpg').
+product(28, 'Ginger Grant', '').
+product(29, 'Champagne Punch III', 'http://img.recipepuppy.com/30.jpg').
+product(30, 'Champagne Punch II', '').
+product(31, 'Ginger Martini', '').
+product(32, 'Nans Potato and Egg Frittata', 'http://img.recipepuppy.com/35.jpg').
+product(33, 'Ukraine Baked Potato Salad', '').
+product(34, 'Cheese and Bacon Potato Balls', 'http://img.recipepuppy.com/37.jpg').
+product(35, 'Cheese Potato Puff', 'http://img.recipepuppy.com/38.jpg').
+product(36, 'swiss Cheese Potato Pancakes', 'http://img.recipepuppy.com/39.jpg').
+product(37, 'Apricot Cream Cheese Thumbprints', 'http://img.recipepuppy.com/41.jpg').
+product(38, 'Chocolate Thumbprints II', 'http://img.recipepuppy.com/42.jpg').
+product(39, 'Raspberry and Almond Shortbread Thumbprints', 'http://img.recipepuppy.com/43.jpg').
+product(40, 'Chocolate Thumbprints I', '').
+product(41, 'Jam Thumbprints', 'http://img.recipepuppy.com/45.jpg').
+product(42, 'Vinis Pork Roast', '').
+product(43, 'Don Strubles Puerto Rican Pork Roast', '').
+product(44, 'Bettys Pork Roast', '').
+product(45, 'Bohemian Pork Roast', '').
+product(46, 'Orange Ginger Pork Roast', 'http://img.recipepuppy.com/51.jpg').
+product(47, 'Irish Potato Casserole', '').
+product(48, 'Lindas Irish Shepherds Pie', 'http://img.recipepuppy.com/54.jpg').
+product(49, 'Irish Potato Farls', 'http://img.recipepuppy.com/55.jpg').
+product(50, 'Irish Stew', 'http://img.recipepuppy.com/56.jpg').
+product(51, 'Vegetable Soup - Irish Style', '').
+product(52, 'Tylers Raspberry Thumbprints with White Chocolate Glaze', 'http://img.recipepuppy.com/59.jpg').
+product(53, 'Oatmeal Thumbprints', 'http://img.recipepuppy.com/60.jpg').
+product(54, 'Fresh Tomato Pasta', 'http://img.recipepuppy.com/62.jpg').
+product(55, 'spinach and Pasta Shells', 'http://img.recipepuppy.com/63.jpg').
+product(56, 'Bowtie Pasta', 'http://img.recipepuppy.com/64.jpg').
+product(57, 'Tonys Summer Pasta', '').
+product(58, 'Pasta and Beans', '').
+product(59, 'Hot Spiced Cranberry Cider', 'http://img.recipepuppy.com/68.jpg').
+product(60, 'Hot Buttered Apple Cider', 'http://img.recipepuppy.com/69.jpg').
+product(61, 'Hot Apple Cider', 'http://img.recipepuppy.com/70.jpg').
+product(62, 'Hot Spiked Cider', 'http://img.recipepuppy.com/71.jpg').
+product(63, 'Cider Wassail', 'http://img.recipepuppy.com/72.jpg').
+product(64, 'Piscola', '').
+product(65, 'Vaina', '').
+product(66, 'Chocoholics Nightcap', 'http://img.recipepuppy.com/76.jpg').
+product(67, 'Chilean Cocktail', '').
+product(68, 'Egg Nog', 'http://img.recipepuppy.com/78.jpg').
+product(69, 'Caribbean Chicken Salad', 'http://img.recipepuppy.com/80.jpg').
+product(70, 'southwest Chicken Salad II', '').
+product(71, 'southwest Chicken Salad I', 'http://img.recipepuppy.com/82.jpg').
+product(72, 'Lime Grilled Chicken Caesar Salad', 'http://img.recipepuppy.com/83.jpg').
+product(73, 'Pecan Crusted Chicken Salad', 'http://img.recipepuppy.com/84.jpg').
+product(74, 'Pork Chops with Sour Cream and Mushroom Sauce', 'http://img.recipepuppy.com/86.jpg').
+product(75, 'Mushroom Sauce Baked Pork Chops', 'http://img.recipepuppy.com/87.jpg').
+product(76, 'Pork Chops with Mushroom Onion Gravy', 'http://img.recipepuppy.com/88.jpg').
+product(77, 'Grandmas Pork Chops in Mushroom Gravy', 'http://img.recipepuppy.com/89.jpg').
+product(78, 'Pork Chops with Burgundy Mushroom Sauce', 'http://img.recipepuppy.com/90.jpg').
+product(79, 'Maryland Crab Cakes II', 'http://img.recipepuppy.com/92.jpg').
+product(80, 'True Maryland Crab Cakes', '').
+product(81, 'Baked Maryland Lump Crab Cakes', 'http://img.recipepuppy.com/94.jpg').
+product(82, 'Maryland Crab Cakes III', 'http://img.recipepuppy.com/95.jpg').
+product(83, 'New England Crab Cakes', 'http://img.recipepuppy.com/96.jpg').
+product(84, 'Creole Black-Eyed Peas and Rice', 'http://img.recipepuppy.com/98.jpg').
+product(85, 'sweet and Spicy Soup with Black-Eyed Peas and Sweet Potato', '').
+product(86, 'shrimp Gumbo', '').
+product(87, 'Big Charlies Gumbo', 'http://img.recipepuppy.com/101.jpg').
+product(88, 'Chicken Andouille Gumbo', 'http://img.recipepuppy.com/102.jpg').
+product(89, 'Cantonese Style Pork and Shrimp Dumplings', 'http://img.recipepuppy.com/104.jpg').
+product(90, 'Pancit', 'http://img.recipepuppy.com/105.jpg').
+product(91, 'spicy Garlic and Pepper Shrimp', 'http://img.recipepuppy.com/106.jpg').
+product(92, 'shrimp Pad Thai', 'http://img.recipepuppy.com/107.jpg').
+product(93, 'Ground Pork Cake with Salty Egg (Haam Daan Ju Yoke Beng)', 'http://img.recipepuppy.com/108.jpg').
+product(94, 'Moores Cranberry Gelatin Salad', '').
+product(95, 'Cranberry Gelatin Salad', 'http://img.recipepuppy.com/111.jpg').
+product(96, 'Moores Cranberry Gelatin Salad', '').
+product(97, 'Cranberry Gelatin Salad II', '').
+product(98, 'Eggnog and Cranberry Salad', '').
+product(99, 'Chocolate Chip Banana Muffins', 'http://img.recipepuppy.com/116.jpg').
+product(100, 'Banana Chip Muffins I', 'http://img.recipepuppy.com/117.jpg').
+product(101, 'Banana Chocolate Chip Muffins', 'http://img.recipepuppy.com/118.jpg').
+product(102, 'Chocolate Chip Banana Muffins', 'http://img.recipepuppy.com/119.jpg').
+product(103, 'Fudgy Chocolate Chip Muffins', 'http://img.recipepuppy.com/120.jpg').
+product(104, 'Chicken Breasts in Caper Cream Sauce', 'http://img.recipepuppy.com/122.jpg').
+product(105, 'Mushroom-Stuffed Chicken Breasts in a Balsamic Pan Sauce', '').
+product(106, 'Veggies and Chicken in Cream Sauce', '').
+product(107, 'Nancys Chicken in Puff Pastry', 'http://img.recipepuppy.com/125.jpg').
+product(108, 'Chicken in Onion and Mustard Sauce', '').
+product(109, 'Rosemary Au Gratin Potatoes', 'http://img.recipepuppy.com/127.jpg').
+product(110, 'Vegan Potatoes au Gratin', '').
+product(111, 'Cheddar Mashed Potatoes', 'http://img.recipepuppy.com/129.jpg').
+product(112, 'Potatoes and Carrots Au Gratin', 'http://img.recipepuppy.com/130.jpg').
+product(113, 'scalloped Cheese Potatoes', 'http://img.recipepuppy.com/131.jpg').
+product(114, 'salsa Chicken and Potato Packets', '').
+product(115, 'Cheesy Chicken and Potato Casserole', 'http://img.recipepuppy.com/134.jpg').
+product(116, 'Red Potato Chicken', 'http://img.recipepuppy.com/135.jpg').
+product(117, 'Chicken Potato Salad', '').
+product(118, 'Underground Baked Chicken and Potatoes', '').
+product(119, 'Wedding Day Punch', '').
+product(120, 'Golden Glow Fruit Punch', '').
+product(121, 'Green Punch', '').
+product(122, 'Mint Tea Punch', 'http://img.recipepuppy.com/142.jpg').
+product(123, 'Tart and Bubbly Wedding Punch', 'http://img.recipepuppy.com/143.jpg').
+product(124, 'Asparagus and Mushroom Puff Pastry Pie', 'http://img.recipepuppy.com/145.jpg').
+product(125, 'Asparagus Quiche', 'http://img.recipepuppy.com/146.jpg').
+product(126, 'Asparagus Frittata', 'http://img.recipepuppy.com/147.jpg').
+product(127, 'Asparagus Mushroom Casserole', 'http://img.recipepuppy.com/148.jpg').
+product(128, 'spinach and Mushroom Frittata', 'http://img.recipepuppy.com/149.jpg').
+product(129, 'Honey Oatmeal Bread II', 'http://img.recipepuppy.com/151.jpg').
+product(130, 'Oatmeal Bread II', 'http://img.recipepuppy.com/152.jpg').
+product(131, 'Bruces Honey Sesame Bread', 'http://img.recipepuppy.com/153.jpg').
+product(132, 'Butter Honey Wheat Bread', 'http://img.recipepuppy.com/154.jpg').
+product(133, 'sweet Honey French Bread', 'http://img.recipepuppy.com/155.jpg').
+product(134, 'Ninety Minute Cinnamon Rolls', 'http://img.recipepuppy.com/157.jpg').
+product(135, 'Moist Cinnamon Rolls', 'http://img.recipepuppy.com/158.jpg').
+product(136, 'Cinnamon Rolls I', 'http://img.recipepuppy.com/159.jpg').
+product(137, 'Cinnamon Rolls II', 'http://img.recipepuppy.com/160.jpg').
+product(138, 'Cinnamon Buns', 'http://img.recipepuppy.com/162.jpg').
+product(139, 'Cinnamon Raisin Bread II', 'http://img.recipepuppy.com/163.jpg').
+product(140, 'Cinnamon Bread II', 'http://img.recipepuppy.com/164.jpg').
+product(141, 'Moms Good Cinnamon Rolls', 'http://img.recipepuppy.com/166.jpg').
+product(142, 'Overnight Cinnamon Rolls I', 'http://img.recipepuppy.com/167.jpg').
+product(143, 'Mothers Cinnamon Rolls', 'http://img.recipepuppy.com/168.jpg').
+product(144, 'Grandma VanDorens White Bread', 'http://img.recipepuppy.com/170.jpg').
+product(145, 'Fresh Yeast Bread', '').
+product(146, 'Traditional White Bread', 'http://img.recipepuppy.com/172.jpg').
+product(147, 'Onion Bread II', 'http://img.recipepuppy.com/173.jpg').
+product(148, 'sazerac', 'http://img.recipepuppy.com/175.jpg').
+product(149, 'Classic Old Fashioned', '').
+product(150, 'Liquid Valium', 'http://img.recipepuppy.com/177.jpg').
+product(151, 'Mulled Apple Champagne Punch', '').
+product(152, 'Champagne Peach Punch', '').
+product(153, 'Juicy Fruit Punch with Champagne', '').
+product(154, 'New Years Champagne Punch', 'http://img.recipepuppy.com/185.jpg').
+product(155, 'Carmel Apple Martini', '').
+product(156, 'Espresso Martini', '').
+product(157, 'Joans Pomegranate Martini', '').
+product(158, 'Concord Cosmopolitan Martini', '').
+product(159, 'Potato Skillet', 'http://img.recipepuppy.com/193.jpg').
+product(160, 'American Frittata', 'http://img.recipepuppy.com/194.jpg').
+product(161, 'Kielbasa and Potato Bake', 'http://img.recipepuppy.com/195.jpg').
+product(162, 'Potato and Bread Cutlets', '').
+product(163, 'Indiana Potato Salad', '').
+product(164, 'Baked Potato Salad II', 'http://img.recipepuppy.com/199.jpg').
+product(165, 'Yummy Yellow Taters', 'http://img.recipepuppy.com/200.jpg').
+product(166, 'Baked Potato Salad with Dill', '').
+product(167, 'Bacon, Potato and Cheese Tart', 'http://img.recipepuppy.com/203.jpg').
+product(168, 'Grilled Cheese and Bacon Potatoes', 'http://img.recipepuppy.com/204.jpg').
+product(169, 'Cheese and Bacon Potato Rounds', 'http://img.recipepuppy.com/205.jpg').
+product(170, 'Potato Cheese Casserole', 'http://img.recipepuppy.com/206.jpg').
+product(171, 'Potato Puff Casserole', 'http://img.recipepuppy.com/208.jpg').
+product(172, 'Old-Fashioned Cheese Potatoes', 'http://img.recipepuppy.com/209.jpg').
+product(173, 'Golden Potato Rounds', '').
+product(174, 'Old-Fashioned Potato Pancakes', 'http://img.recipepuppy.com/212.jpg').
+product(175, 'Crispy Potato Pancakes', 'http://img.recipepuppy.com/213.jpg').
+product(176, 'Confetti Potato Pancakes', '').
+product(177, 'Potato Pancakes', 'http://img.recipepuppy.com/215.jpg').
+product(178, 'Cream Cheese Christmas Cookies', '').
+product(179, 'Pistachio Cream Cheese Fingers', 'http://img.recipepuppy.com/218.jpg').
+product(180, 'Cream Cheese Sugar Cookies', 'http://img.recipepuppy.com/219.jpg').
+product(181, 'Blue Cheese and Red Onion Jam Crescent Thumbprints', 'http://img.recipepuppy.com/234.jpg').
+product(182, 'Chinese Roast Pork', 'http://img.recipepuppy.com/236.jpg').
+product(183, 'Puerto Rican Pork Roast', 'http://img.recipepuppy.com/238.jpg').
+product(184, 'spicy Honey Mustard Pork Roast', 'http://img.recipepuppy.com/240.jpg').
+product(185, 'Fruit Glazed Pork Roast', '').
+product(186, 'Cindys Country Style Creole Pork Roast', 'http://img.recipepuppy.com/244.jpg').
+product(187, 'Maple Baked Pork Loin Roast', 'http://img.recipepuppy.com/245.jpg').
+product(188, 'Paprika Pork Roast', 'http://img.recipepuppy.com/247.jpg').
+product(189, 'Potato and Broccoli Casserole', '').
+product(190, 'Pork Chop and Potato Casserole', 'http://img.recipepuppy.com/250.jpg').
 
+stock(394, 122, 35.5, 93).
+stock(734, 131, 65.5, 96).
+stock(479, 74, 83.5, 84).
+stock(38, 152, 12.5, 73).
+stock(683, 127, 78.5, 2).
+stock(901, 99, 23.5, 93).
+stock(143, 165, 3.5, 71).
+stock(195, 141, 73.5, 74).
+stock(995, 29, 75.5, 91).
+stock(26, 64, 47.5, 96).
+stock(140, 27, 9.5, 55).
+stock(964, 140, 10.5, 34).
+stock(217, 170, 26.5, 27).
+stock(818, 144, 37.5, 81).
+stock(571, 155, 97.5, 5).
+stock(810, 12, 41.5, 8).
+stock(526, 24, 98.5, 24).
+stock(377, 162, 21.5, 33).
+stock(586, 186, 74.5, 30).
+stock(646, 108, 73.5, 72).
+stock(5, 23, 93.5, 12).
+stock(364, 59, 14.5, 50).
+stock(81, 185, 9.5, 35).
+stock(11, 94, 88.5, 24).
+stock(207, 87, 73.5, 43).
+stock(343, 107, 96.5, 34).
+stock(344, 10, 80.5, 82).
+stock(899, 29, 15.5, 9).
+stock(127, 175, 67.5, 91).
+stock(563, 154, 49.5, 78).
+stock(80, 150, 58.5, 88).
+stock(383, 72, 87.5, 43).
+stock(81, 105, 93.5, 40).
+stock(828, 70, 52.5, 95).
+stock(441, 128, 53.5, 94).
+stock(542, 23, 63.5, 40).
+stock(281, 84, 71.5, 27).
+stock(564, 65, 9.5, 81).
+stock(55, 143, 47.5, 33).
+stock(578, 45, 67.5, 70).
+stock(203, 102, 3.5, 79).
+stock(773, 143, 24.5, 26).
+stock(481, 142, 31.5, 38).
+stock(503, 124, 63.5, 83).
+stock(47, 72, 83.5, 56).
+stock(336, 51, 51.5, 43).
+stock(144, 73, 99.5, 23).
+stock(601, 93, 63.5, 56).
+stock(640, 31, 20.5, 77).
+stock(493, 13, 22.5, 68).
+stock(67, 101, 81.5, 60).
+stock(591, 184, 95.5, 93).
+stock(666, 155, 27.5, 98).
+stock(566, 179, 62.5, 62).
+stock(811, 49, 38.5, 92).
+stock(736, 171, 78.5, 1).
+stock(170, 45, 56.5, 96).
+stock(391, 153, 79.5, 25).
+stock(631, 5, 61.5, 59).
+stock(833, 54, 30.5, 27).
+stock(920, 76, 83.5, 79).
+stock(707, 166, 42.5, 16).
+stock(348, 84, 82.5, 40).
+stock(578, 140, 71.5, 9).
+stock(50, 93, 33.5, 27).
+stock(983, 89, 8.5, 40).
+stock(166, 26, 87.5, 88).
+stock(36, 132, 41.5, 62).
+stock(568, 25, 61.5, 61).
+stock(485, 28, 64.5, 91).
+stock(22, 89, 52.5, 56).
+stock(460, 149, 67.5, 80).
+stock(212, 152, 45.5, 55).
+stock(321, 144, 83.5, 61).
+stock(233, 17, 80.5, 83).
+stock(360, 138, 45.5, 53).
+stock(732, 143, 58.5, 81).
+stock(254, 69, 2.5, 61).
+stock(717, 175, 16.5, 17).
+stock(247, 91, 40.5, 15).
+stock(470, 47, 20.5, 94).
+stock(36, 59, 7.5, 47).
+stock(927, 106, 87.5, 59).
+stock(941, 81, 36.5, 72).
+stock(143, 153, 20.5, 13).
+stock(747, 163, 89.5, 28).
+stock(328, 146, 15.5, 79).
+stock(714, 42, 68.5, 73).
+stock(404, 94, 19.5, 78).
+stock(591, 145, 14.5, 82).
+stock(232, 15, 36.5, 18).
+stock(88, 188, 41.5, 67).
+stock(29, 17, 33.5, 85).
+stock(673, 48, 46.5, 90).
+stock(952, 62, 84.5, 26).
+stock(981, 46, 93.5, 68).
+stock(123, 9, 47.5, 17).
+stock(6, 4, 59.5, 24).
+stock(747, 79, 5.5, 70).
+stock(227, 95, 32.5, 64).
+stock(408, 146, 20.5, 42).
+stock(139, 76, 31.5, 95).
+stock(530, 186, 50.5, 26).
+stock(768, 128, 49.5, 11).
+stock(88, 94, 62.5, 57).
+stock(571, 171, 75.5, 3).
+stock(105, 23, 91.5, 22).
+stock(813, 132, 38.5, 62).
+stock(586, 147, 95.5, 54).
+stock(135, 100, 39.5, 73).
+stock(722, 180, 89.5, 38).
+stock(676, 63, 8.5, 40).
+stock(118, 89, 84.5, 40).
+stock(675, 64, 61.5, 45).
+stock(21, 49, 97.5, 35).
+stock(182, 64, 68.5, 48).
+stock(104, 150, 75.5, 54).
+stock(933, 158, 4.5, 28).
+stock(304, 30, 2.5, 96).
+stock(236, 147, 94.5, 38).
+stock(342, 11, 3.5, 49).
+stock(686, 34, 44.5, 90).
+stock(189, 84, 19.5, 89).
+stock(56, 7, 94.5, 5).
+stock(725, 76, 51.5, 90).
+stock(469, 127, 18.5, 3).
+stock(788, 172, 68.5, 14).
+stock(750, 117, 39.5, 60).
+stock(792, 151, 97.5, 7).
+stock(386, 145, 96.5, 86).
+stock(126, 150, 16.5, 64).
+stock(712, 9, 23.5, 46).
+stock(576, 103, 78.5, 44).
+stock(732, 115, 55.5, 13).
+stock(849, 59, 95.5, 89).
+stock(53, 161, 73.5, 57).
+stock(394, 74, 61.5, 3).
+stock(627, 183, 31.5, 24).
+stock(904, 66, 50.5, 48).
+stock(540, 36, 29.5, 26).
+stock(832, 168, 67.5, 47).
+stock(404, 86, 6.5, 19).
+stock(276, 150, 55.5, 87).
+stock(171, 163, 29.5, 17).
+stock(551, 20, 59.5, 95).
+stock(169, 13, 50.5, 71).
+stock(942, 13, 78.5, 60).
+stock(968, 94, 37.5, 38).
+stock(244, 16, 71.5, 4).
+stock(268, 63, 59.5, 42).
+stock(521, 75, 88.5, 77).
+stock(402, 154, 18.5, 22).
+stock(658, 23, 51.5, 83).
+stock(267, 35, 87.5, 26).
+stock(226, 140, 90.5, 95).
+stock(826, 88, 12.5, 53).
+stock(59, 154, 88.5, 71).
+stock(730, 54, 39.5, 30).
+stock(663, 77, 48.5, 87).
+stock(497, 61, 11.5, 87).
+stock(924, 38, 16.5, 1).
+stock(102, 180, 7.5, 69).
+stock(37, 150, 4.5, 81).
+stock(121, 182, 17.5, 8).
+stock(231, 54, 4.5, 92).
+stock(923, 66, 65.5, 28).
+stock(468, 188, 25.5, 28).
+stock(907, 154, 84.5, 98).
+stock(215, 149, 35.5, 23).
+stock(656, 70, 28.5, 43).
+stock(318, 182, 19.5, 14).
+stock(931, 95, 79.5, 58).
+stock(500, 14, 73.5, 57).
+stock(38, 80, 3.5, 64).
+stock(443, 35, 48.5, 24).
+stock(56, 97, 32.5, 66).
+stock(818, 61, 99.5, 85).
+stock(290, 65, 41.5, 51).
+stock(248, 112, 84.5, 54).
+stock(443, 13, 31.5, 3).
+stock(886, 132, 28.5, 86).
+stock(361, 1, 58.5, 9).
+stock(410, 103, 55.5, 57).
+stock(346, 170, 4.5, 70).
+stock(213, 116, 23.5, 27).
+stock(474, 87, 37.5, 98).
+stock(131, 8, 92.5, 38).
+stock(593, 160, 24.5, 52).
+stock(927, 110, 84.5, 34).
+stock(278, 7, 22.5, 62).
+stock(262, 30, 31.5, 63).
+stock(936, 36, 35.5, 13).
+stock(62, 166, 3.5, 60).
+stock(856, 154, 63.5, 93).
+stock(892, 84, 77.5, 52).
+stock(946, 72, 66.5, 89).
+stock(851, 158, 74.5, 71).
+stock(710, 153, 88.5, 58).
+stock(633, 159, 39.5, 78).
+stock(53, 62, 18.5, 18).
+stock(249, 7, 56.5, 69).
+stock(972, 143, 29.5, 1).
+stock(102, 188, 31.5, 74).
+stock(273, 136, 64.5, 53).
+stock(115, 12, 19.5, 58).
+stock(191, 43, 99.5, 29).
+stock(350, 99, 89.5, 47).
+stock(611, 82, 92.5, 96).
+stock(228, 37, 66.5, 58).
+stock(351, 79, 35.5, 79).
+stock(851, 11, 90.5, 17).
+stock(598, 91, 56.5, 43).
+stock(38, 55, 57.5, 58).
+stock(217, 80, 35.5, 87).
+stock(886, 105, 15.5, 66).
+stock(899, 83, 79.5, 14).
+stock(703, 24, 77.5, 35).
+stock(680, 18, 6.5, 33).
+stock(18, 181, 97.5, 92).
+stock(129, 11, 90.5, 20).
+stock(388, 173, 18.5, 59).
+stock(779, 181, 27.5, 94).
+stock(903, 89, 28.5, 36).
+stock(570, 166, 13.5, 49).
+stock(366, 173, 9.5, 93).
+stock(642, 53, 74.5, 60).
+stock(419, 178, 94.5, 42).
+stock(116, 79, 47.5, 6).
+stock(363, 94, 65.5, 69).
+stock(205, 142, 35.5, 61).
+stock(696, 167, 21.5, 17).
+stock(896, 176, 83.5, 72).
+stock(18, 59, 66.5, 29).
+stock(209, 126, 56.5, 57).
+stock(734, 105, 78.5, 98).
+stock(258, 188, 52.5, 76).
+stock(361, 45, 2.5, 30).
+stock(955, 48, 96.5, 95).
+stock(735, 114, 21.5, 28).
+stock(609, 37, 71.5, 59).
+stock(659, 64, 18.5, 9).
+stock(716, 176, 84.5, 33).
+stock(982, 115, 29.5, 23).
+stock(565, 27, 27.5, 7).
+stock(622, 58, 29.5, 56).
+stock(353, 38, 22.5, 18).
+stock(352, 161, 40.5, 21).
+stock(539, 35, 61.5, 47).
+stock(945, 178, 18.5, 93).
+stock(900, 48, 29.5, 8).
+stock(160, 166, 64.5, 5).
+stock(760, 66, 66.5, 13).
+stock(614, 42, 6.5, 48).
+stock(390, 101, 10.5, 71).
+stock(74, 17, 72.5, 44).
+stock(282, 50, 44.5, 99).
+stock(633, 79, 30.5, 95).
+stock(974, 16, 45.5, 47).
+stock(604, 124, 50.5, 71).
+stock(186, 17, 53.5, 9).
+stock(477, 2, 59.5, 86).
+stock(336, 159, 33.5, 19).
+stock(91, 150, 6.5, 17).
+stock(231, 93, 8.5, 37).
+stock(638, 59, 45.5, 29).
+stock(573, 104, 19.5, 64).
+stock(338, 50, 30.5, 86).
+stock(877, 9, 3.5, 73).
+stock(780, 14, 14.5, 50).
+stock(212, 55, 51.5, 11).
+stock(64, 155, 35.5, 22).
+stock(66, 108, 75.5, 63).
+stock(509, 59, 73.5, 74).
+stock(941, 8, 21.5, 96).
+stock(766, 54, 21.5, 8).
+stock(175, 169, 9.5, 37).
+stock(658, 63, 56.5, 13).
+stock(137, 121, 68.5, 60).
+stock(251, 56, 43.5, 26).
+stock(687, 64, 34.5, 84).
+stock(251, 156, 11.5, 11).
+stock(796, 78, 34.5, 99).
+stock(589, 77, 54.5, 30).
+stock(391, 126, 85.5, 36).
+stock(74, 31, 59.5, 2).
+stock(431, 77, 14.5, 29).
+stock(485, 161, 51.5, 27).
+stock(683, 46, 5.5, 54).
+stock(623, 34, 48.5, 34).
+stock(728, 90, 84.5, 75).
+stock(794, 27, 90.5, 56).
+stock(131, 78, 94.5, 93).
+stock(7, 69, 91.5, 27).
+stock(986, 51, 11.5, 82).
+stock(499, 185, 82.5, 62).
+stock(660, 25, 39.5, 28).
+stock(669, 170, 78.5, 68).
+stock(232, 161, 45.5, 64).
+stock(188, 127, 20.5, 8).
+stock(918, 102, 50.5, 56).
+stock(738, 39, 59.5, 5).
+stock(730, 59, 70.5, 41).
+stock(627, 73, 50.5, 22).
+stock(582, 39, 33.5, 85).
+stock(809, 130, 79.5, 4).
+stock(440, 60, 82.5, 15).
+stock(393, 98, 82.5, 9).
+stock(216, 170, 72.5, 64).
+stock(565, 114, 45.5, 48).
+stock(828, 81, 3.5, 66).
+stock(396, 159, 84.5, 30).
+stock(189, 109, 54.5, 31).
+stock(931, 125, 97.5, 64).
+stock(432, 98, 49.5, 18).
+stock(816, 188, 34.5, 37).
+stock(797, 148, 37.5, 10).
+stock(156, 19, 88.5, 16).
+stock(737, 15, 7.5, 9).
+stock(399, 39, 87.5, 76).
+stock(779, 111, 21.5, 82).
+stock(143, 55, 91.5, 79).
+stock(925, 114, 43.5, 30).
+stock(445, 179, 66.5, 17).
+stock(752, 172, 39.5, 51).
+stock(244, 90, 69.5, 25).
+stock(150, 101, 26.5, 46).
+stock(459, 121, 52.5, 40).
+stock(23, 142, 16.5, 22).
+stock(511, 4, 87.5, 42).
+stock(966, 7, 56.5, 23).
+stock(316, 60, 43.5, 50).
+stock(298, 40, 74.5, 28).
+stock(77, 67, 3.5, 80).
+stock(97, 68, 73.5, 51).
+stock(492, 80, 79.5, 44).
+stock(181, 187, 82.5, 21).
+stock(686, 149, 57.5, 44).
+stock(26, 160, 73.5, 22).
+stock(242, 112, 98.5, 61).
+stock(589, 50, 20.5, 95).
+stock(105, 62, 60.5, 55).
+stock(599, 133, 95.5, 99).
+stock(36, 18, 29.5, 26).
+stock(860, 189, 14.5, 58).
+stock(956, 31, 65.5, 74).
+stock(320, 3, 43.5, 29).
+stock(322, 64, 93.5, 85).
+stock(625, 94, 56.5, 81).
+stock(398, 131, 71.5, 52).
+stock(567, 118, 22.5, 37).
+stock(677, 17, 40.5, 92).
+stock(442, 184, 20.5, 89).
+stock(70, 101, 9.5, 76).
+stock(776, 95, 59.5, 18).
+stock(761, 46, 37.5, 33).
+stock(287, 85, 62.5, 12).
+stock(871, 122, 94.5, 40).
+stock(375, 17, 8.5, 64).
+stock(24, 113, 16.5, 65).
+stock(812, 177, 35.5, 75).
+stock(118, 15, 65.5, 82).
+stock(809, 187, 82.5, 72).
+stock(808, 120, 10.5, 95).
+stock(786, 141, 23.5, 92).
+stock(718, 166, 44.5, 16).
+stock(408, 38, 50.5, 18).
+stock(136, 19, 51.5, 42).
+stock(426, 105, 10.5, 91).
+stock(971, 53, 95.5, 54).
+stock(872, 77, 33.5, 34).
+stock(522, 49, 52.5, 62).
+stock(925, 127, 51.5, 88).
+stock(328, 174, 71.5, 82).
+stock(584, 108, 7.5, 11).
+stock(428, 3, 71.5, 99).
+stock(155, 38, 17.5, 12).
+stock(637, 173, 81.5, 81).
+stock(113, 128, 89.5, 72).
+stock(447, 146, 88.5, 15).
+stock(139, 62, 42.5, 7).
+stock(974, 46, 68.5, 72).
+stock(382, 11, 20.5, 72).
+stock(829, 172, 60.5, 96).
+stock(278, 170, 79.5, 4).
+stock(156, 79, 44.5, 24).
+stock(548, 137, 19.5, 5).
+stock(37, 55, 19.5, 79).
+stock(57, 41, 78.5, 91).
+stock(983, 49, 67.5, 95).
+stock(636, 23, 69.5, 29).
+stock(573, 2, 33.5, 45).
+stock(378, 72, 50.5, 26).
+stock(884, 95, 33.5, 55).
+stock(690, 115, 90.5, 13).
+stock(36, 172, 33.5, 30).
+stock(521, 117, 22.5, 94).
+stock(65, 26, 95.5, 28).
+stock(753, 91, 3.5, 44).
+stock(778, 64, 49.5, 98).
+stock(374, 171, 42.5, 87).
+stock(344, 77, 67.5, 49).
+stock(80, 126, 44.5, 81).
+stock(872, 183, 43.5, 29).
+stock(95, 181, 58.5, 66).
+stock(792, 96, 31.5, 45).
+stock(452, 163, 87.5, 45).
+stock(967, 177, 6.5, 6).
+stock(83, 129, 76.5, 84).
+stock(92, 138, 8.5, 43).
+stock(769, 161, 97.5, 42).
+stock(989, 81, 71.5, 8).
+stock(48, 21, 41.5, 33).
+stock(691, 90, 63.5, 59).
+stock(285, 160, 45.5, 32).
+stock(879, 131, 94.5, 78).
+stock(547, 141, 22.5, 39).
+stock(908, 110, 25.5, 61).
+stock(461, 77, 86.5, 8).
+stock(3, 186, 61.5, 58).
+stock(390, 73, 60.5, 70).
+stock(177, 16, 85.5, 11).
+stock(359, 155, 75.5, 35).
+stock(85, 34, 58.5, 97).
+stock(794, 152, 90.5, 21).
+stock(614, 62, 69.5, 97).
+stock(99, 162, 90.5, 64).
+stock(568, 93, 52.5, 95).
+stock(258, 170, 26.5, 58).
+stock(681, 152, 55.5, 27).
+stock(847, 167, 29.5, 14).
+stock(212, 172, 40.5, 82).
+stock(67, 161, 81.5, 33).
+stock(858, 11, 45.5, 80).
+stock(271, 63, 64.5, 80).
+stock(898, 67, 83.5, 77).
+stock(31, 91, 41.5, 75).
+stock(854, 160, 59.5, 73).
+stock(321, 32, 89.5, 95).
+stock(90, 107, 9.5, 96).
+stock(118, 70, 78.5, 60).
+stock(74, 7, 5.5, 50).
+stock(62, 3, 56.5, 13).
+stock(327, 176, 9.5, 20).
+stock(464, 75, 40.5, 32).
+stock(760, 39, 20.5, 61).
+stock(865, 119, 75.5, 21).
+stock(764, 90, 30.5, 65).
+stock(510, 31, 87.5, 21).
+stock(330, 94, 10.5, 94).
+stock(687, 53, 92.5, 11).
+stock(127, 172, 3.5, 91).
+stock(947, 107, 32.5, 33).
+stock(727, 56, 87.5, 42).
+stock(298, 47, 43.5, 60).
+stock(561, 95, 86.5, 23).
+stock(869, 92, 17.5, 5).
+stock(197, 35, 74.5, 27).
+stock(433, 104, 60.5, 10).
+stock(224, 17, 59.5, 76).
+stock(345, 6, 17.5, 43).
+stock(802, 69, 49.5, 46).
+stock(475, 114, 86.5, 87).
+stock(930, 152, 75.5, 64).
+stock(957, 16, 3.5, 21).
+stock(839, 62, 14.5, 28).
+stock(819, 89, 29.5, 14).
+stock(583, 39, 37.5, 6).
+stock(536, 95, 84.5, 91).
+stock(432, 82, 70.5, 46).
+stock(757, 114, 31.5, 93).
+stock(588, 117, 42.5, 82).
+stock(894, 84, 28.5, 35).
+stock(676, 167, 21.5, 62).
+stock(215, 181, 15.5, 26).
+stock(10, 31, 40.5, 83).
+stock(897, 103, 65.5, 49).
+stock(246, 183, 26.5, 77).
+stock(356, 121, 23.5, 70).
+stock(596, 104, 65.5, 1).
+stock(404, 187, 95.5, 55).
+stock(978, 71, 92.5, 61).
+stock(156, 24, 66.5, 7).
+stock(910, 162, 61.5, 50).
+stock(525, 74, 40.5, 27).
+stock(224, 120, 68.5, 85).
+stock(502, 157, 6.5, 19).
+stock(430, 100, 54.5, 75).
+stock(817, 1, 84.5, 68).
+stock(612, 185, 92.5, 17).
+stock(935, 89, 18.5, 14).
+stock(822, 45, 72.5, 44).
+stock(907, 118, 61.5, 73).
+stock(763, 55, 96.5, 31).
+stock(705, 139, 46.5, 79).
+stock(807, 106, 42.5, 62).
+stock(915, 124, 75.5, 53).
+stock(113, 11, 71.5, 48).
+stock(690, 67, 50.5, 31).
+stock(198, 2, 8.5, 77).
+stock(466, 53, 37.5, 98).
+stock(264, 131, 17.5, 38).
+stock(145, 151, 68.5, 95).
+stock(702, 35, 44.5, 23).
+stock(944, 65, 31.5, 39).
+stock(22, 93, 73.5, 85).
+stock(260, 120, 86.5, 77).
+stock(507, 103, 22.5, 22).
+stock(181, 83, 81.5, 72).
+stock(894, 57, 82.5, 79).
+stock(122, 148, 28.5, 93).
+stock(86, 65, 55.5, 70).
+stock(717, 67, 30.5, 95).
+stock(401, 83, 50.5, 74).
+stock(995, 165, 17.5, 62).
+stock(96, 51, 81.5, 77).
+stock(746, 111, 96.5, 65).
+stock(197, 66, 71.5, 69).
+stock(453, 8, 33.5, 76).
+stock(436, 142, 71.5, 26).
+stock(249, 30, 18.5, 3).
+stock(725, 39, 41.5, 45).
+stock(633, 138, 71.5, 98).
+stock(405, 60, 36.5, 43).
+stock(120, 138, 33.5, 31).
+stock(545, 134, 5.5, 25).
+stock(692, 56, 60.5, 98).
+stock(215, 177, 32.5, 17).
+stock(620, 109, 26.5, 76).
+stock(812, 95, 7.5, 70).
+stock(868, 106, 22.5, 96).
+stock(857, 14, 2.5, 68).
+stock(687, 154, 98.5, 11).
+stock(19, 19, 12.5, 10).
+stock(778, 158, 50.5, 51).
+stock(467, 53, 33.5, 65).
+stock(995, 9, 9.5, 73).
+stock(878, 120, 27.5, 2).
+stock(453, 16, 16.5, 74).
+stock(478, 15, 7.5, 33).
+stock(547, 134, 81.5, 80).
+stock(35, 178, 50.5, 9).
+stock(794, 90, 14.5, 80).
+stock(122, 165, 6.5, 23).
+stock(469, 89, 73.5, 51).
+stock(962, 105, 51.5, 13).
+stock(312, 42, 6.5, 39).
+stock(818, 97, 64.5, 8).
+stock(592, 76, 3.5, 36).
+stock(820, 166, 26.5, 2).
+stock(30, 12, 75.5, 26).
+stock(12, 114, 56.5, 71).
+stock(211, 5, 71.5, 56).
+stock(147, 173, 59.5, 21).
+stock(547, 179, 54.5, 18).
+stock(433, 177, 14.5, 4).
+stock(363, 116, 46.5, 56).
+stock(941, 138, 21.5, 72).
+stock(983, 136, 14.5, 67).
+stock(123, 135, 45.5, 79).
+stock(598, 168, 77.5, 75).
+stock(264, 20, 94.5, 6).
+stock(219, 82, 57.5, 68).
+stock(614, 83, 3.5, 32).
+stock(755, 110, 34.5, 84).
+stock(52, 183, 52.5, 93).
+stock(742, 182, 89.5, 38).
+stock(409, 48, 75.5, 11).
+stock(968, 115, 22.5, 89).
+stock(134, 15, 91.5, 9).
+stock(582, 18, 25.5, 87).
+stock(383, 125, 82.5, 30).
+stock(799, 149, 84.5, 41).
+stock(723, 60, 48.5, 71).
+stock(263, 62, 15.5, 14).
+stock(477, 28, 12.5, 94).
+stock(241, 28, 60.5, 37).
+stock(703, 151, 74.5, 58).
+stock(701, 14, 56.5, 47).
+stock(811, 135, 89.5, 4).
+stock(616, 71, 52.5, 63).
+stock(587, 178, 46.5, 1).
+stock(287, 22, 31.5, 10).
+stock(123, 171, 12.5, 18).
+stock(96, 174, 91.5, 30).
+stock(932, 22, 65.5, 66).
+stock(510, 108, 86.5, 13).
+stock(153, 65, 93.5, 68).
+stock(853, 89, 6.5, 50).
+stock(751, 89, 37.5, 32).
+stock(498, 153, 3.5, 47).
+stock(743, 15, 70.5, 62).
+stock(761, 17, 91.5, 14).
+stock(491, 153, 49.5, 59).
+stock(972, 116, 53.5, 90).
+stock(917, 167, 91.5, 78).
+stock(755, 3, 87.5, 42).
+stock(353, 1, 85.5, 99).
+stock(840, 88, 23.5, 58).
+stock(811, 161, 6.5, 58).
+stock(275, 44, 21.5, 56).
+stock(964, 66, 3.5, 30).
+stock(133, 69, 87.5, 70).
+stock(953, 109, 29.5, 93).
+stock(281, 111, 94.5, 11).
+stock(576, 35, 76.5, 20).
+stock(418, 63, 74.5, 39).
+stock(906, 124, 48.5, 52).
+stock(428, 78, 37.5, 89).
+stock(230, 1, 3.5, 85).
+stock(39, 35, 80.5, 68).
+stock(478, 135, 39.5, 37).
+stock(294, 66, 57.5, 43).
+stock(992, 15, 72.5, 32).
+stock(922, 122, 36.5, 49).
+stock(886, 44, 63.5, 51).
+stock(454, 189, 75.5, 66).
+stock(337, 167, 98.5, 55).
+stock(9, 9, 56.5, 41).
+stock(464, 178, 68.5, 64).
+stock(363, 83, 32.5, 78).
+stock(489, 52, 16.5, 38).
+stock(908, 174, 45.5, 83).
+stock(482, 133, 84.5, 89).
+stock(473, 183, 55.5, 53).
+stock(50, 37, 9.5, 39).
+stock(971, 67, 10.5, 30).
+stock(186, 180, 43.5, 76).
+stock(142, 78, 30.5, 89).
+stock(112, 162, 21.5, 97).
+stock(450, 50, 57.5, 63).
+stock(985, 175, 56.5, 76).
+stock(844, 12, 28.5, 33).
+stock(675, 187, 45.5, 81).
+stock(626, 106, 24.5, 96).
+stock(696, 26, 11.5, 40).
+stock(377, 27, 84.5, 50).
+stock(965, 142, 99.5, 93).
+stock(606, 101, 31.5, 60).
+stock(698, 119, 23.5, 6).
+stock(275, 57, 6.5, 37).
+stock(894, 8, 42.5, 31).
+stock(807, 78, 18.5, 3).
+stock(591, 29, 27.5, 85).
+stock(696, 177, 30.5, 73).
+stock(732, 99, 23.5, 53).
+stock(975, 29, 86.5, 54).
+stock(534, 65, 76.5, 62).
+stock(686, 100, 52.5, 40).
+stock(88, 98, 78.5, 7).
+stock(205, 137, 66.5, 95).
+stock(422, 74, 11.5, 73).
+stock(532, 27, 80.5, 11).
+stock(730, 21, 27.5, 6).
+stock(24, 81, 42.5, 57).
+stock(618, 102, 4.5, 27).
+stock(142, 189, 48.5, 13).
+stock(383, 28, 7.5, 41).
+stock(91, 87, 44.5, 46).
+stock(683, 71, 35.5, 9).
+stock(353, 169, 90.5, 61).
+stock(459, 137, 12.5, 5).
+stock(21, 143, 81.5, 7).
+stock(520, 85, 37.5, 34).
+stock(693, 165, 57.5, 82).
+stock(763, 18, 66.5, 74).
+stock(980, 154, 37.5, 68).
+stock(736, 182, 40.5, 37).
+stock(616, 175, 3.5, 25).
+stock(263, 2, 98.5, 64).
+stock(671, 11, 25.5, 23).
+stock(926, 93, 72.5, 49).
+stock(9, 185, 24.5, 66).
+stock(922, 162, 16.5, 65).
+stock(957, 128, 35.5, 14).
+stock(303, 87, 12.5, 39).
+stock(796, 132, 75.5, 6).
+stock(724, 97, 90.5, 71).
+stock(21, 184, 21.5, 3).
+stock(344, 127, 10.5, 83).
+stock(537, 111, 76.5, 31).
+stock(830, 164, 34.5, 63).
+stock(811, 176, 94.5, 88).
+stock(138, 162, 90.5, 46).
+stock(343, 159, 50.5, 25).
+stock(870, 104, 81.5, 91).
+stock(856, 19, 78.5, 66).
+stock(248, 149, 24.5, 50).
+stock(889, 152, 29.5, 3).
+stock(149, 49, 95.5, 19).
+stock(917, 161, 42.5, 46).
+stock(104, 152, 54.5, 84).
+stock(38, 35, 72.5, 12).
+stock(260, 132, 50.5, 8).
+stock(586, 126, 75.5, 1).
+stock(258, 119, 56.5, 54).
+stock(287, 165, 16.5, 92).
+stock(480, 137, 19.5, 46).
+stock(414, 92, 3.5, 90).
+stock(870, 167, 98.5, 87).
+stock(183, 3, 40.5, 91).
+stock(579, 25, 20.5, 70).
+stock(364, 185, 42.5, 83).
+stock(924, 108, 91.5, 14).
+stock(402, 12, 2.5, 32).
+stock(260, 104, 6.5, 3).
+stock(366, 56, 51.5, 96).
+stock(267, 96, 71.5, 75).
+stock(79, 27, 61.5, 86).
+stock(39, 139, 3.5, 47).
+stock(321, 22, 85.5, 92).
+stock(549, 94, 28.5, 83).
+stock(928, 79, 39.5, 5).
+stock(991, 20, 61.5, 82).
+stock(209, 31, 82.5, 36).
+stock(513, 72, 30.5, 53).
+stock(864, 163, 54.5, 20).
+stock(343, 56, 10.5, 7).
+stock(100, 97, 83.5, 79).
+stock(377, 14, 42.5, 50).
+stock(349, 174, 29.5, 48).
+stock(987, 132, 43.5, 96).
+stock(675, 37, 69.5, 67).
+stock(397, 167, 10.5, 51).
+stock(673, 94, 22.5, 64).
+stock(610, 162, 12.5, 31).
+stock(740, 13, 34.5, 73).
+stock(375, 62, 15.5, 66).
+stock(547, 100, 18.5, 68).
+stock(43, 11, 47.5, 6).
+stock(308, 175, 81.5, 35).
+stock(883, 12, 85.5, 19).
+stock(444, 112, 95.5, 73).
+stock(403, 41, 32.5, 83).
+stock(994, 164, 21.5, 73).
+stock(900, 188, 78.5, 74).
+stock(639, 37, 29.5, 18).
+stock(959, 115, 98.5, 51).
+stock(984, 145, 84.5, 39).
+stock(41, 74, 87.5, 41).
+stock(725, 90, 44.5, 81).
+stock(729, 113, 25.5, 38).
+stock(369, 9, 85.5, 15).
+stock(657, 127, 35.5, 37).
+stock(536, 85, 89.5, 13).
+stock(548, 164, 40.5, 6).
+stock(997, 51, 50.5, 58).
+stock(817, 164, 47.5, 70).
+stock(335, 128, 20.5, 91).
+stock(765, 38, 81.5, 10).
+stock(913, 3, 50.5, 4).
+stock(533, 11, 5.5, 48).
+stock(944, 153, 29.5, 90).
+stock(661, 173, 84.5, 60).
+stock(171, 175, 27.5, 21).
+stock(561, 118, 53.5, 31).
+stock(163, 20, 21.5, 60).
+stock(346, 49, 12.5, 87).
+stock(499, 142, 87.5, 56).
+stock(77, 166, 37.5, 33).
+stock(769, 68, 80.5, 63).
+stock(415, 20, 40.5, 56).
+stock(570, 96, 85.5, 31).
+stock(545, 53, 31.5, 24).
+stock(492, 21, 54.5, 42).
+stock(765, 108, 86.5, 9).
+stock(257, 54, 70.5, 82).
+stock(465, 151, 10.5, 14).
+stock(794, 129, 73.5, 39).
+stock(483, 136, 38.5, 11).
+stock(362, 185, 95.5, 39).
+stock(84, 12, 8.5, 73).
+stock(475, 182, 61.5, 2).
+stock(864, 61, 33.5, 11).
+stock(321, 67, 20.5, 13).
+stock(369, 167, 61.5, 65).
+stock(590, 100, 89.5, 33).
+stock(351, 141, 90.5, 77).
+stock(301, 134, 65.5, 34).
+stock(170, 171, 39.5, 21).
+stock(871, 81, 74.5, 66).
+stock(696, 46, 34.5, 12).
+stock(231, 22, 70.5, 21).
+stock(701, 129, 60.5, 97).
+stock(314, 121, 74.5, 87).
+stock(899, 182, 90.5, 77).
+stock(180, 35, 7.5, 29).
+stock(36, 14, 34.5, 24).
+stock(689, 58, 33.5, 79).
+stock(937, 177, 87.5, 64).
+stock(9, 88, 56.5, 20).
+stock(178, 6, 64.5, 22).
+stock(934, 89, 25.5, 94).
+stock(473, 8, 5.5, 44).
+stock(992, 176, 45.5, 84).
+stock(627, 6, 36.5, 87).
+stock(116, 126, 22.5, 74).
+stock(173, 28, 28.5, 59).
+stock(328, 74, 16.5, 65).
+stock(156, 71, 63.5, 67).
+stock(715, 133, 69.5, 67).
+stock(449, 59, 88.5, 53).
+stock(568, 163, 94.5, 59).
+stock(813, 26, 59.5, 82).
+stock(33, 186, 57.5, 89).
+stock(782, 37, 9.5, 78).
+stock(275, 174, 68.5, 60).
+stock(132, 183, 91.5, 72).
+stock(132, 164, 9.5, 84).
+stock(324, 150, 65.5, 90).
+stock(60, 109, 55.5, 93).
+stock(549, 126, 93.5, 67).
+stock(983, 156, 33.5, 61).
+stock(461, 114, 39.5, 65).
+stock(982, 8, 78.5, 7).
+stock(409, 139, 27.5, 77).
+stock(716, 175, 25.5, 5).
+stock(699, 129, 34.5, 77).
+stock(99, 169, 18.5, 95).
+stock(699, 140, 32.5, 24).
+stock(869, 77, 32.5, 99).
+stock(352, 177, 8.5, 16).
+stock(493, 147, 38.5, 26).
+stock(792, 170, 36.5, 66).
+stock(76, 90, 75.5, 76).
+stock(795, 176, 93.5, 3).
+stock(85, 67, 71.5, 79).
+stock(955, 53, 9.5, 63).
+stock(922, 96, 77.5, 87).
+stock(414, 188, 48.5, 27).
+stock(733, 112, 86.5, 37).
+stock(267, 156, 77.5, 74).
+stock(800, 93, 96.5, 70).
+stock(812, 148, 6.5, 69).
+stock(670, 80, 8.5, 86).
+stock(246, 166, 96.5, 75).
+stock(969, 59, 11.5, 25).
+stock(528, 80, 36.5, 69).
+stock(62, 93, 38.5, 16).
+stock(536, 14, 62.5, 73).
+stock(921, 108, 58.5, 90).
+stock(592, 90, 93.5, 1).
+stock(744, 113, 98.5, 48).
+stock(369, 23, 33.5, 19).
+stock(451, 135, 28.5, 84).
+stock(274, 159, 69.5, 70).
+stock(50, 146, 68.5, 69).
+stock(1, 62, 78.5, 57).
+stock(553, 96, 15.5, 45).
+stock(329, 115, 42.5, 7).
+stock(748, 32, 30.5, 93).
+stock(216, 80, 44.5, 81).
+stock(524, 60, 62.5, 19).
+stock(867, 64, 19.5, 16).
+stock(691, 60, 63.5, 67).
+stock(15, 49, 51.5, 69).
+stock(775, 126, 51.5, 74).
+stock(945, 41, 29.5, 29).
+stock(684, 174, 57.5, 47).
+stock(39, 70, 56.5, 80).
+stock(85, 9, 92.5, 73).
+stock(597, 159, 22.5, 16).
+stock(858, 168, 68.5, 75).
+stock(943, 183, 69.5, 90).
+stock(767, 12, 17.5, 34).
+stock(539, 129, 73.5, 63).
+stock(236, 176, 31.5, 83).
+stock(984, 125, 22.5, 85).
+stock(207, 177, 31.5, 80).
+stock(721, 119, 17.5, 76).
+stock(160, 63, 89.5, 78).
+stock(870, 23, 42.5, 3).
+stock(157, 29, 35.5, 5).
+stock(693, 188, 30.5, 4).
+stock(30, 90, 2.5, 22).
+stock(910, 81, 92.5, 57).
+stock(352, 148, 84.5, 76).
+stock(1, 96, 44.5, 15).
+stock(176, 84, 35.5, 88).
+stock(308, 113, 13.5, 74).
+stock(74, 38, 95.5, 76).
+stock(175, 108, 93.5, 26).
+stock(189, 173, 67.5, 53).
+stock(759, 69, 72.5, 81).
+stock(100, 176, 15.5, 1).
+stock(681, 173, 29.5, 93).
+stock(852, 145, 83.5, 72).
+stock(195, 140, 63.5, 89).
+stock(370, 179, 22.5, 23).
+stock(678, 112, 22.5, 5).
+stock(413, 21, 86.5, 21).
+stock(570, 119, 57.5, 75).
+stock(328, 89, 35.5, 7).
+stock(569, 82, 88.5, 97).
+stock(909, 146, 48.5, 47).
+stock(960, 82, 94.5, 16).
+stock(557, 49, 87.5, 37).
+stock(880, 74, 30.5, 18).
+stock(350, 179, 55.5, 46).
+stock(995, 184, 14.5, 25).
+stock(617, 55, 76.5, 17).
+stock(441, 134, 43.5, 95).
+stock(701, 177, 82.5, 39).
+stock(569, 137, 66.5, 6).
+stock(602, 31, 15.5, 62).
+stock(984, 186, 57.5, 50).
+stock(63, 86, 38.5, 98).
+stock(196, 2, 6.5, 25).
+stock(807, 146, 28.5, 79).
+stock(998, 134, 45.5, 55).
+stock(683, 173, 34.5, 45).
+stock(701, 78, 92.5, 23).
+stock(249, 20, 12.5, 49).
+stock(930, 139, 95.5, 55).
+stock(456, 6, 44.5, 11).
+stock(733, 157, 56.5, 7).
+stock(271, 69, 39.5, 41).
+stock(257, 79, 75.5, 69).
+stock(377, 170, 60.5, 60).
+stock(82, 81, 12.5, 32).
+stock(96, 3, 46.5, 38).
+stock(464, 105, 45.5, 10).
+stock(170, 147, 59.5, 37).
+stock(537, 141, 96.5, 87).
+stock(322, 102, 26.5, 9).
+stock(502, 46, 25.5, 34).
+stock(571, 108, 15.5, 54).
+stock(683, 146, 46.5, 95).
+stock(658, 184, 31.5, 24).
+stock(864, 181, 63.5, 12).
+stock(903, 128, 25.5, 84).
+stock(692, 113, 55.5, 66).
+stock(308, 125, 21.5, 68).
+stock(252, 134, 89.5, 93).
+stock(8, 170, 42.5, 94).
+stock(377, 93, 65.5, 40).
+stock(773, 180, 54.5, 90).
+stock(11, 99, 54.5, 89).
+stock(139, 65, 4.5, 57).
+stock(819, 138, 23.5, 47).
+stock(703, 88, 66.5, 6).
+stock(917, 114, 24.5, 74).
+stock(898, 72, 61.5, 20).
+stock(519, 21, 80.5, 81).
+stock(118, 48, 83.5, 37).
+stock(66, 111, 68.5, 18).
+stock(482, 32, 32.5, 33).
+stock(324, 49, 20.5, 71).
+stock(521, 119, 63.5, 58).
+stock(370, 109, 18.5, 35).
+stock(224, 145, 71.5, 9).
+stock(805, 183, 71.5, 17).
+stock(753, 105, 54.5, 86).
+stock(335, 85, 27.5, 95).
+stock(887, 151, 92.5, 51).
+stock(551, 117, 53.5, 34).
+stock(532, 32, 63.5, 55).
+stock(737, 52, 3.5, 66).
+stock(564, 22, 98.5, 69).
+stock(19, 48, 24.5, 65).
+stock(55, 136, 38.5, 9).
+stock(226, 106, 54.5, 77).
+stock(961, 162, 23.5, 69).
+stock(680, 33, 99.5, 65).
+stock(451, 112, 83.5, 34).
+stock(239, 179, 54.5, 29).
+stock(319, 70, 59.5, 94).
+stock(707, 182, 20.5, 50).
+stock(483, 9, 67.5, 40).
+stock(823, 73, 95.5, 2).
+stock(669, 116, 73.5, 11).
+stock(911, 105, 59.5, 8).
+stock(521, 80, 53.5, 30).
+stock(323, 13, 15.5, 60).
+stock(608, 105, 91.5, 52).
+stock(342, 17, 35.5, 75).
+stock(960, 49, 93.5, 63).
+stock(659, 146, 6.5, 75).
+stock(727, 35, 2.5, 8).
+stock(967, 181, 78.5, 40).
+stock(737, 184, 37.5, 10).
+stock(755, 91, 91.5, 69).
+stock(809, 127, 68.5, 69).
+stock(106, 87, 69.5, 99).
+stock(994, 102, 45.5, 85).
+stock(129, 142, 74.5, 55).
+stock(332, 18, 60.5, 19).
+stock(482, 87, 69.5, 32).
+stock(892, 126, 13.5, 40).
+stock(437, 130, 83.5, 7).
+stock(211, 78, 11.5, 23).
+stock(474, 32, 64.5, 62).
+stock(626, 180, 66.5, 15).
+stock(70, 73, 57.5, 42).
+stock(114, 74, 30.5, 89).
+stock(928, 131, 52.5, 42).
+stock(120, 162, 38.5, 7).
+stock(111, 174, 89.5, 26).
+stock(257, 144, 29.5, 26).
+stock(241, 129, 88.5, 32).
+stock(304, 35, 2.5, 42).
+
+
+store(StoreId, StoreName, StoreRating, ProductId, ProductName, ProductPhoto, ProductPrice, ProductAmount) :- product(ProductId, ProductName, ProductPhoto), store(StoreId, StoreName), rating(StoreId, StoreRating), stock(StoreId, ProductId, ProductPrice, ProductAmount).
 stores(ID, NAME, LAT, LNG, RATING) :- store(ID, NAME), location(ID, LAT, LNG), rating(ID, RATING).

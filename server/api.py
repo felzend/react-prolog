@@ -3,7 +3,7 @@ import time
 import json
 
 from urllib.parse import urlparse, parse_qs
-from pyswip import Prolog
+from pyswip import Prolog, Query
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 pl = Prolog()
@@ -30,7 +30,9 @@ class HttpServerHandler(BaseHTTPRequestHandler):
         logging.info("URL: %s", params)
 
         if '/store' in self.path and 'id' in params: # GET store/{id}
-            obj = list(pl.query("stores(Id, Name, Lat, Lng, Rating), Id = %d" % ( int(params['id'][0]) )))
+            query = "store(StoreId, StoreName, StoreRating, ProductId, ProductName, ProductPhoto, ProductPrice, ProductAmount), StoreId = %d." % int(params['id'][0])
+            logging.info("Query: %s", query)
+            obj = list(pl.query(query))
             self._set_json_response()
             self.wfile.write(json.dumps(obj).encode('utf-8'))
             return

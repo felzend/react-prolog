@@ -25,7 +25,7 @@
 					`,
 					data: function() {
 						return {
-							
+
 						}
 					}
 				};
@@ -49,7 +49,7 @@
 						}
 					},
 					methods: {
-						
+
 					},
 				};
 				var app = new Vue({
@@ -70,10 +70,10 @@
 					},
 					methods: {
 						enterStore: function(id) {
-								$.get(this.fetchURL.concat(`/stores?id=${id}`), data => {
-										this.currentView = 'single-store';
-										this.currentStore = data;
-								});								
+							$.get(this.fetchURL.concat(`/stores?id=${id}`), data => {
+									this.currentView = 'single-store';
+									this.currentStore = data;
+							});
 						},
 						exitStore: function(id) {
 							this.currentView = 'stores-list';
