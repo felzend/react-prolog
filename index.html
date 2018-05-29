@@ -13,22 +13,26 @@
 	<script type="text/javascript">
 		(function($) {
 			$(document).ready(function() {
-				var Store = { // Single Store
+				var SingleStore = { // Single Store Component
+					props: ['store'],
 					template: `
+						<div class="single-store">
+							{{ this.$parent.currentStore }}
 						<div>
-							{{ store }}
-						<div>
+						<div class="back">
+							<button class="btn btn-info" v-on:click="$parent.exitStore($parent.currentStore.Id)">Voltar</button>
+						</div>
 					`,
 					data: function() {
 						return {
-							store: {'teste': 25},
+							
 						}
 					}
 				};
-				var Stores = { // Stores List
+				var StoresList = { // Stores List Component
 					template: `
 						<div>
-							<div class="store" v-for="(store, index) in this.$parent.stores.slice(0,15)">
+							<div class="store" v-for="(store, index) in this.$parent.stores.slice(0,15)" v-on:click="$parent.enterStore(store.Id)">
 								<div class="thumbnail">
 									<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7d8ZNgzbZWendnubFOmXhir5RX1ZDw4zNdHb16Zc5pTDM_nvVDw">
 								</div>
@@ -43,22 +47,37 @@
 						return {
 
 						}
-					}
+					},
+					methods: {
+						
+					},
 				};
 				var app = new Vue({
 					el: "#app",
 					data: {
 						fetchURL: "http://localhost:4000",
+						currentView: 'stores-list',
 						foods: [],
 						stores: [],
-						currentView: 'store',
+						status: {
+							cart: [],
+							currentStore: {},
+						}
 					},
 					components: {
-						stores: Stores,
-						store: Store,
+						'single-store': SingleStore,
+						'stores-list': StoresList,
 					},
 					methods: {
-
+						enterStore: function(id) {
+								$.get(this.fetchURL.concat(`/stores?id=${id}`), data => {
+										this.currentView = 'single-store';
+										this.currentStore = data;
+								});								
+						},
+						exitStore: function(id) {
+							this.currentView = 'stores-list';
+						}
 					},
 					watch: {
 						foods: function() {
@@ -72,8 +91,6 @@
 						//$.get("https://raw.githubusercontent.com/felzend/react-prolog/master/server/assets/foods.json", data => this.foods = JSON.parse(data));
 						//$.get("https://raw.githubusercontent.com/felzend/react-prolog/master/server/assets/stores.json", data => this.stores = JSON.parse(data));
 						$.get(this.fetchURL.concat("/stores"), data => this.stores = data);
-
-						console.log( this.components.$store );
 					}
 				})
 			})
@@ -90,7 +107,7 @@
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		  <span class="navbar-toggler-icon"></span>
 	  </button>
-	  <a class="navbar-brand" href="#">Prolog WebApp</a>
+	  <a class="navbar-brand mx-auto" href="#">Prolog WebApp</a>
 		<div class="collapse navbar-collapse" id="navbarNav">
 		  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 				<li class="nav-item active">

@@ -2,6 +2,7 @@ import logging
 import time
 import json
 
+from urllib.parse import urlparse, parse_qs
 from pyswip import Prolog
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
@@ -24,7 +25,16 @@ class HttpServerHandler(BaseHTTPRequestHandler):
 
     def do_GET(self):
         global pl
-        if self.path == '/stores': # GET Stores
+
+        params = parse_qs(urlparse(self.path).query)
+        logging.info("URL: %s", params)
+
+        if '/store' in self.path and 'id' in params: # GET store/{id}
+            obj = list(pl.query("stores(Id, Name, Lat, Lng, Rating), Id = %d" % ( int(params['id'][0]) )))
+            self._set_json_response()
+            self.wfile.write(json.dumps(obj).encode('utf-8'))
+            return
+        if '/stores' in self.path: # GET Stores
             obj = list(pl.query("stores(Id, Name, Lat, Lng, Rating)"))
             self._set_json_response()
             self.wfile.write(json.dumps(obj).encode('utf-8'))
