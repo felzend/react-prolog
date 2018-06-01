@@ -22,16 +22,11 @@
 						<div class="back">
 							<button class="btn btn-info" v-on:click="$parent.exitStore($parent.currentStore.Id)">Voltar</button>
 						</div>
-					`,
-					data: function() {
-						return {
-
-						}
-					}
+					`
 				};
 				var StoresList = { // Stores List Component
 					template: `
-						<div>
+						<div class="stores-list">
 							<div class="store" v-for="(store, index) in this.$parent.stores.slice(0,15)" v-on:click="$parent.enterStore(store.Id)">
 								<div class="thumbnail">
 									<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7d8ZNgzbZWendnubFOmXhir5RX1ZDw4zNdHb16Zc5pTDM_nvVDw">
@@ -42,15 +37,15 @@
 								</div>
 							</div>
 						</div>
-					`,
-					data: function() {
-						return {
-
-						}
-					},
-					methods: {
-
-					},
+					`,					
+				};
+				var Cart = {
+					props: ['cart'],
+					template: `
+						<div class="cart">
+							{{ cart }}
+						</div>
+					`
 				};
 				var app = new Vue({
 					el: "#app",
@@ -67,6 +62,7 @@
 					components: {
 						'single-store': SingleStore,
 						'stores-list': StoresList,
+						'cart': Cart,
 					},
 					methods: {
 						enterStore: function(id) {
@@ -85,9 +81,6 @@
 							if(this.currentStore.length > 0) {
 
 							}
-						},
-						foods: function() {
-							//console.log(this.foods);
 						},
 						stores: function() {
 							console.log(this.stores);
@@ -112,10 +105,10 @@
 	<nav class="navbar navbar-expand-lg navbar-light" id="navbar">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		  <span class="navbar-toggler-icon"></span>
-	  </button>
-	  <a class="navbar-brand mx-auto" href="#">Prolog WebApp</a>
+		</button>
+	  	<a class="navbar-brand mx-auto" href="#">Prolog WebApp</a>
 		<div class="collapse navbar-collapse" id="navbarNav">
-		  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 				<li class="nav-item active">
 				  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 				</li>
@@ -128,10 +121,31 @@
 				<li class="nav-item">
 				  <a class="nav-link disabled" href="#">Minha Conta</a>
 				</li>
-		  </ul>
+			</ul>
 		</div>
+		<button class="navbar-toggler" type="button" data-toggle="modal" data-target="#cartModal">
+			<i class="fas fa-shopping-cart"></i>
+		</button>
 	</nav>
 	<component :is="currentView"></component>
+	<div class="modal" tabindex="-1" role="dialog" id="cartModal"><!-- Cart Modal -->
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title">Carrinho de compras</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+				<cart></cart>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+			</div>
+		  </div>
+		</div>
+	</div>
 </div>
 </body>
 </html>
