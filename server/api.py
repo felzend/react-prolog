@@ -26,13 +26,38 @@ class HttpServerHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         global pl
         params = parse_qs(urlparse(self.path).query)
-        logging.info("URL: %s", params)
+        logging.info("URL PARAMS: %s", params)
+        
+        if self.path.startswith("/favicon.ico"):
+            return
 
-        if self.path.startswith("/favicon.ico"): 
+        if '/sales' in self.path: # GET /sales
+            query = "checkout(Sale, Product, Price), Sale > -1"
+            sales = list(pl.query(query))
+            if len(sales) == 0:
+                sales = [ ]
+            self._set_json_response()
+            self.wfile.write(json.dumps(sales).encode('utf-8'))
+            return
+
+        if '/checkout' in self.path: # GET /checkout
+            products = json.loads(params['products'][0])
+            for p in products:
+                sale = int(p['sale'])
+                product = int(p['product'])
+                price = float(p['price'])
+                query = "checkout(%d, %d, %f)" % ( sale, product, price )
+                
+                pl.assertz(query)
+                pl.retractall("cart(%d)" % (product) )
+                logging.info("CHECKOUT %d - Product %d" % (sale, product))
+                logging.info("CART (REMOVE) - %d", (product))
+
+            self._set_response()
             return
 
         if '/cart' in self.path: # GET /cart
-            query = "cart(Id, Name, Photo), Id > -1"
+            query = "cart(Id, Name, Photo, Price), Id > -1"
             products = list(pl.query(query))
             if len(products) == 0:
                 products = [ ]
@@ -57,52 +82,33 @@ class HttpServerHandler(BaseHTTPRequestHandler):
         if '/stock' in self.path: # GET /stock - Params: product (id), method (inc | dec).
             pid = int(params['product'][0])
             action = params['action'][0]
-            if action == 'dec':
+            
+            if action == 'dec': # Removo produto do estoque e adiciono ao carrinho de compras.
                 query = "stock(%d, Price, Amount)" % (pid)
                 product = list(pl.query(query))
                 if len(product) > 0:
                     product = product[0]
-                    logging.info("PRODUCT: %s", product)
+                    logging.info("PRODUCT (ADD/CART): %s", product)
                     pl.retractall("stock(%d, _, _)" % (pid))
                     pl.assertz("stock(%d, %f, %d)" % (pid, float(product['Price']), int(product['Amount']) - 1))
                     pl.assertz("cart(%d)" % (pid))
+            
+            elif action == 'inc': # Removo o produto do carrinho e adiciono ao estoque.
+                query = "stock(%d, Price, Amount)" % (pid)
+                product = list(pl.query(query))
+                if len(product) > 0:
+                    product = product[0]
+                    logging.info("PRODUCT (REMOVE/CART): %s", product)
+                    pl.retract("cart(%d)" % (pid))
+                    pl.retract("stock(%d, _, _)" % (pid))
+                    pl.assertz("stock(%d, %f, %d)" % (pid, float(product['Price']), int(product['Amount']) + 1))
+            
             self._set_response()
             return
-        '''
-        if '/store' in self.path and 'id' in params: # GET store/{id}
-            query = "store(StoreId, StoreName, StoreRating, ProductId, ProductName, ProductPhoto, ProductPrice, ProductAmount), StoreId = %d." % int(params['id'][0])
-            obj = list(pl.query(query))
-            self._set_json_response()
-            self.wfile.write(json.dumps(obj).encode('utf-8'))
-            return
-        if '/stores' in self.path: # GET Stores
-            obj = list(pl.query("stores(Id, Name, Lat, Lng, Rating)"))
-            self._set_json_response()
-            self.wfile.write(json.dumps(obj).encode('utf-8'))
-            return
-        if self.path == '/ratings': # GET Ratings
-            obj = list(pl.query("rating(ID, VALUE)"))
-            self._set_json_response()
-            self.wfile.write(json.dumps(obj).encode('utf-8'))
-            return
-        if self.path == '/locations': # GET Locations
-            obj = list(pl.query("location(ID, LAT, LNG)"))
-            self._set_json_response()
-            self.wfile.write(json.dumps(obj).encode())
-            return
-        '''
+
         self._set_response()
         self.wfile.write("Prolog API's index.".format(self.path).encode('utf-8'))
-        
-
-    def do_POST(self): # TODO
-        content_length = int(self.headers['Content-Length']) # <--- Gets the size of data
-        post_data = self.rfile.read(content_length) # <--- Gets the data itself
-        logging.info("POST request,\nPath: %s\nHeaders:\n%s\n\nBody:\n%s\n",
-                str(self.path), str(self.headers), post_data.decode('utf-8'))
-
-        self._set_response()
-        self.wfile.write("POST request for {}".format(self.path).encode('utf-8'))
+        return
 
 # Initialization function for loading Prolog database into server memory.
 def initialization():

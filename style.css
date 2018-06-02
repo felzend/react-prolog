@@ -10,12 +10,20 @@ body {
 .navbar-toggler {
     border: none;
 }
-.product {
+.product,
+.cart {
     display: flex;
     border-bottom: 1px solid #b5b5b5;
     flex-direction: row;
     font-size: 0.9em;
     padding: 1em;
+}
+.cart {
+    border-bottom: none;
+    flex-direction: column;
+}
+.cart .product {
+    width: 100%;
 }
 .product img {
     order: 1;
@@ -37,6 +45,17 @@ body {
     color: greenyellow;
     font-size: 2em;
 }
+.cart .product .management .remove-from-cart {
+    color: red;
+    font-size: 2em;
+}
 .product .name {
     
+}
+.footer {
+    background-color: #0ED6BD;
+    color: white;
+    padding: .5em 0;
+    height: 50px;
+    text-align: center;
 }

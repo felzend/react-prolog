@@ -381,11 +381,12 @@ stock(189, 19.78, 11).
 stock(190, 20.90, 10).
 
 cart(-1)
+checkout(-1, -1, -1).
 
 rating(4.5).
 
 products(Id, Name, Price, Stock, Photo) :- product(Id, Name, Photo), stock(Id, Price, Stock).
 
-cart(Id, Name, Photo) :- cart(Id), product(Id, Name, Photo).
+cart(Id, Name, Photo, Price) :- cart(Id), product(Id, Name, Photo), stock(Id, Price, _).
 
 user('felipe', 'felipe').

@@ -8,19 +8,42 @@
 
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./style.css">
-	<title>Prolog WebApp</title>
+	<title>Prolog Web Store</title>
 	<script type="text/javascript">
 		(function($) {
 			$(document).ready(function() {
+                var sales = Vue.component("sales", { // Sales Component
+                    props: ['sales'],
+                    template: `
+                        <div class="sales">
+                            {{ sales }}
+                        </div>
+                    `
+                });
                 var cart = Vue.component("cart", { // Cart Component
-                    props: ['cart'],
+                    props: ['cart', 'total'],
                     template: `
                         <div class="cart">
-                            {{ cart }}
+                            <div v-if="cart.length === 0 || Object.keys(cart).length === 0">Sem Produtos!</div>
+                            <div class="product" v-for="product in cart">
+                                <img class="img-responsive" v-bind:src="product[0].Photo">
+                                <div class="info">
+                                    <div class="name">{{ product[0].Name }}</div>
+                                    <div class="price"><i class="fas fa-dollar-sign"></i> {{ product[0].Price.toFixed(2) }}</div>
+                                    <div class="stock">Quantidade: {{ product.length }} unidades.</div>
+                                </div>
+                                <div class="management">
+                                    <a href="javascript:void(0)" class="remove-from-cart" v-on:click="$parent.removeFromCart(product[0])"><i class="fas fa-times-circle"></i></a>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="total">Total da Compra: <i class="fas fa-dollar-sign"></i> {{ total.toFixed(2) }}</div>
                         </div>
                     `
                 });
@@ -30,12 +53,21 @@
                         fetchUrl: "http://localhost:4000",
                         products: [],
                         cart: [],
+                        cartValue: 0,
+                        sales: [],
                     },
                     methods: {
+                        randomInteger: function (min, max) {
+                            return Math.floor(Math.random() * (max - min + 1) ) + min;
+                        },
                         addToCart: function(product) {
+                            let hasStock = this.products.filter(p => p.Id === product.Id && p.Stock > 0).length > 0;
+                            if(!hasStock) {
+                                alert("Estoque zerado.");
+                                return;
+                            }
                             console.log("Add to cart");
                             console.log(product);
-                            this.cart.push(product);
                             $.get(this.fetchUrl + "/stock", { product: product.Id, action: 'dec' }, response => {
                                 this.products.map(p => {
                                     if( p.Id === product.Id ) --p.Stock;
@@ -45,10 +77,44 @@
                         removeFromCart: function(product) {
                             console.log("Remove from cart");
                             console.log(product);
+                            $.get(this.fetchUrl + "/stock", { product: product.Id, action: 'inc' }, response => {
+                                this.products.map(p => {
+                                    if( p.Id === product.Id ) ++p.Stock;
+                                });
+                                this.fetchCart();                                
+                            });
                         },
                         fetchCart: function() {
                             $.get(this.fetchUrl + "/cart", response => {
-                                this.cart = response;
+                                this.cartValue = 0;
+                                response.forEach(product => {
+                                    this.cartValue += product.Price;
+                                });
+                                this.cart = _.groupBy(response, 'Id');
+                            });
+                        },
+                        fetchSales: function() {
+                            $.get(this.fetchUrl + "/sales", response => {
+                                this.sales = response;
+                            });
+                        },
+                        checkout: function() {
+                            if( cart.length === 0 || Object.keys(cart).length === 0 ) return;
+                            $.get(this.fetchUrl + "/cart", response => {
+                                let products = [ ];
+                                let saleId = this.randomInteger( this.randomInteger(1, 10000), this.randomInteger(22000, 9000000) ); // Mad Random Sale ID.
+                                
+                                response.forEach(product => {
+                                    products.push({
+                                        sale: saleId,
+                                        product: product.Id,
+                                        price: product.Price.toFixed(2),
+                                    });                                    
+                                });
+
+                                $.get(this.fetchUrl + "/checkout", { products: JSON.stringify(products) }, response => {
+                                    this.fetchCart();
+                                });
                             });
                         }
                     },
@@ -81,20 +147,24 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mx-auto" href="#">Prolog WebApp</a>
+            <a class="navbar-brand mx-auto" href="#">Prolog Web Store</a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Minha Conta</a>
-                    </li>
-                </ul>
+                    
+                </ul>                
+                <a href="javascript:void(0)" data-toggle="modal" data-target="#salesModal" v-on:click="fetchSales">
+                    <i class="fas fa-clipboard-list"></i>
+                </a>
+                <a href="javascript:void(0)" style="margin: 0 .5em" data-toggle="modal" data-target="#cartModal" v-on:click="fetchCart">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="modal" data-target="#cartModal" v-on:click="fetchCart">
+            <a class="navbar-toggler" href="javascript:void(0)" data-toggle="modal" data-target="#salesModal" v-on:click="fetchSales">
+                <i class="fas fa-clipboard-list"></i>
+            </a>
+            <a class="navbar-toggler" href="javascript:void(0)" data-toggle="modal" data-target="#cartModal" v-on:click="fetchCart">
                 <i class="fas fa-shopping-cart"></i>
-            </button>
+            </a>
         </nav>
         <div class="modal" tabindex="-1" role="dialog" id="cartModal"><!-- Cart Modal -->
             <div class="modal-dialog" role="document">
@@ -106,12 +176,31 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                    <cart :cart="cart"></cart>
+                    <cart :cart="cart" :total="cartValue"></cart>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button class="btn btn-success btn-checkout" v-bind:class="{ disabled: cart.length === 0 || Object.keys(cart).length === 0 }" v-on:click="checkout">Finalizar Compra</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                 </div>
               </div>
+            </div>            
+        </div>
+        <div class="modal" tabindex="-1" role="dialog" id="salesModal"><!-- Sales Modal -->
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Vendas Realizadas</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <sales :sales="sales"></sales>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="products">
@@ -129,4 +218,7 @@
         </div>
     </div>
 </body>
+<footer class="footer">
+    Copyright 2018 - Felipe S. Fernandes - Prolog Web Store
+</footer>
 </html>
