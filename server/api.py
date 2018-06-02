@@ -25,10 +25,50 @@ class HttpServerHandler(BaseHTTPRequestHandler):
 
     def do_GET(self):
         global pl
-
         params = parse_qs(urlparse(self.path).query)
         logging.info("URL: %s", params)
 
+        if self.path.startswith("/favicon.ico"): 
+            return
+
+        if '/cart' in self.path: # GET /cart
+            query = "cart(Id, Name, Photo), Id > -1"
+            products = list(pl.query(query))
+            if len(products) == 0:
+                products = [ ]
+            self._set_json_response()
+            self.wfile.write(json.dumps(products).encode('utf-8'))
+            return
+
+        if '/products' in self.path: # GET /products
+            query = "products(Id, Name, Price, Stock, Photo)"
+            products = list(pl.query(query))
+            self._set_json_response()
+            self.wfile.write(json.dumps(products).encode('utf-8'))
+            return
+
+        if '/rating' in self.path: # GET /rating
+            query = "rating(Value)"
+            rating = list(pl.query(query))
+            self._set_json_response()
+            self.wfile.write(json.dumps(rating).encode('utf-8'))
+            return
+
+        if '/stock' in self.path: # GET /stock - Params: product (id), method (inc | dec).
+            pid = int(params['product'][0])
+            action = params['action'][0]
+            if action == 'dec':
+                query = "stock(%d, Price, Amount)" % (pid)
+                product = list(pl.query(query))
+                if len(product) > 0:
+                    product = product[0]
+                    logging.info("PRODUCT: %s", product)
+                    pl.retractall("stock(%d, _, _)" % (pid))
+                    pl.assertz("stock(%d, %f, %d)" % (pid, float(product['Price']), int(product['Amount']) - 1))
+                    pl.assertz("cart(%d)" % (pid))
+            self._set_response()
+            return
+        '''
         if '/store' in self.path and 'id' in params: # GET store/{id}
             query = "store(StoreId, StoreName, StoreRating, ProductId, ProductName, ProductPhoto, ProductPrice, ProductAmount), StoreId = %d." % int(params['id'][0])
             obj = list(pl.query(query))
@@ -50,9 +90,10 @@ class HttpServerHandler(BaseHTTPRequestHandler):
             self._set_json_response()
             self.wfile.write(json.dumps(obj).encode())
             return
-
-        #self._set_response()
-        #self.wfile.write("Prolog API's index.".format(self.path).encode('utf-8'))
+        '''
+        self._set_response()
+        self.wfile.write("Prolog API's index.".format(self.path).encode('utf-8'))
+        
 
     def do_POST(self): # TODO
         content_length = int(self.headers['Content-Length']) # <--- Gets the size of data

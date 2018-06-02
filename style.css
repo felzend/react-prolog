@@ -10,39 +10,33 @@ body {
 .navbar-toggler {
     border: none;
 }
-.food {
-    display: flex;
-    flex-direction: row;
-    padding: 0.5em 1em;
-}
-.food img {
-    order: 1;
-    width: 120px;
-}
-.food .name {
-    order: 2;
-    flex: 60%;
-    font-size: 1.2em;
-    margin: 0 1em;
-}
-.store {
+.product {
     display: flex;
     border-bottom: 1px solid #b5b5b5;
     flex-direction: row;
+    font-size: 0.9em;
     padding: 1em;
 }
-.store .thumbnail {
+.product img {
     order: 1;
-    flex: 30%;
-}
-.store .thumbnail img {
     max-height: 60px;
 }
-.store .info {
+.product .info {
     order: 2;
-    flex: 1 1 100%;
     display: flex;
-    font-size: 0.9em;
+    flex: 60%;
     flex-direction: column;
-    padding: 0em 5em 1em 1em;
+    margin: 0 1em;
+}
+.product .management {
+    order: 3;
+    flex: 30%;
+    text-align: center;
+}
+.product .management .add-to-cart {
+    color: greenyellow;
+    font-size: 2em;
+}
+.product .name {
+    
 }
