@@ -32,7 +32,7 @@ class HttpServerHandler(BaseHTTPRequestHandler):
             return
 
         if '/sales' in self.path: # GET /sales
-            query = "checkout(Sale, Product, Price), Sale > -1"
+            query = "checkouts(Sale, Product, Name, Price), Sale > -1"
             sales = list(pl.query(query))
             if len(sales) == 0:
                 sales = [ ]

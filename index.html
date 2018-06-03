@@ -22,7 +22,15 @@
                     props: ['sales'],
                     template: `
                         <div class="sales">
-                            {{ sales }}
+                            <div v-if="sales.length === 0 || Object.keys(sales).length === 0">Sem Vendas Realizadas!</div>
+                            <div class="sale" v-for="(sale, index) in sales">
+                                <div class="id">Venda <b># {{ index }}</b></div>
+                                <br>
+                                <div class="product" v-for="products in sale"><b>{{ products[0].Name }}</b> &nbsp; - Quantidade: &nbsp;<b>{{ products.length }}</b> &nbsp; - (Preço por unidade: &nbsp;<b>$ {{ products[0].Price.toFixed(2) }}</b>) &nbsp; - Total: &nbsp; $ {{ _.reduce(products.map(p => p.Price), (a, b) => a + b).toFixed(2) }}</div>
+                                <br>
+                                - Total da Venda: $ <b>{{ _.reduce( Object.keys(sale).map(k => sale[k]).map(products => products).map(product => product[0].Price), (a, b) => a + b ).toFixed(2) }}<b>
+                                <br><hr>
+                            </div>
                         </div>
                     `
                 });
@@ -89,13 +97,20 @@
                                 this.cartValue = 0;
                                 response.forEach(product => {
                                     this.cartValue += product.Price;
+                                    if(!product.Photo.length || product.Photo === undefined) {
+                                        product.Photo = "http://www.companion-group.com/wp-content/uploads/brands-product-information-200x200.gif";
+                                    }
                                 });
                                 this.cart = _.groupBy(response, 'Id');
                             });
                         },
                         fetchSales: function() {
                             $.get(this.fetchUrl + "/sales", response => {
-                                this.sales = response;
+                                if(!response.length) return;
+                                this.sales = _.groupBy(response, 'Sale');
+                                for(let i in this.sales) {
+                                    this.sales[i] = _.groupBy(this.sales[i], 'Product');
+                                }
                             });
                         },
                         checkout: function() {
@@ -120,7 +135,7 @@
                     },
                     watch: {
                         cart: function() {
-                            console.log("Fetched Cart.");
+                            console.log("Fetched Cart.");                            
                             console.log(this.cart);
                         },
                         products: function() {
@@ -131,6 +146,9 @@
                             });
 
                             console.log(this.products);
+                        },
+                        sales: function() {
+                            console.log(this.sales);
                         }
                     },
                     mounted: function() {
@@ -152,17 +170,17 @@
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     
                 </ul>                
-                <a href="javascript:void(0)" data-toggle="modal" data-target="#salesModal" v-on:click="fetchSales">
+                <a class="navbar-right-icon" href="javascript:void(0)" data-toggle="modal" data-target="#salesModal" v-on:click="fetchSales">
                     <i class="fas fa-clipboard-list"></i>
                 </a>
-                <a href="javascript:void(0)" style="margin: 0 .5em" data-toggle="modal" data-target="#cartModal" v-on:click="fetchCart">
+                <a class="navbar-right-icon" href="javascript:void(0)" style="margin: 0 .5em" data-toggle="modal" data-target="#cartModal" v-on:click="fetchCart">
                     <i class="fas fa-shopping-cart"></i>
                 </a>
             </div>
-            <a class="navbar-toggler" href="javascript:void(0)" data-toggle="modal" data-target="#salesModal" v-on:click="fetchSales">
+            <a class="navbar-toggler navbar-right-icon" href="javascript:void(0)" data-toggle="modal" data-target="#salesModal" v-on:click="fetchSales">
                 <i class="fas fa-clipboard-list"></i>
             </a>
-            <a class="navbar-toggler" href="javascript:void(0)" data-toggle="modal" data-target="#cartModal" v-on:click="fetchCart">
+            <a class="navbar-toggler navbar-right-icon" href="javascript:void(0)" data-toggle="modal" data-target="#cartModal" v-on:click="fetchCart">
                 <i class="fas fa-shopping-cart"></i>
             </a>
         </nav>

@@ -389,4 +389,4 @@ products(Id, Name, Price, Stock, Photo) :- product(Id, Name, Photo), stock(Id, P
 
 cart(Id, Name, Photo, Price) :- cart(Id), product(Id, Name, Photo), stock(Id, Price, _).
 
-user('felipe', 'felipe').
+checkouts(Sale, Product, Name, Price) :- checkout(Sale, Product, Price), product(Product, Name, _).
