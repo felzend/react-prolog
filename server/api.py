@@ -1,9 +1,8 @@
 import logging
-import time
 import json
 
 from urllib.parse import urlparse, parse_qs
-from pyswip import Prolog, Query
+from pyswip import Prolog
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 pl = Prolog()
@@ -11,13 +10,13 @@ pl = Prolog()
 # HTTP Server Handler Class.
 class HttpServerHandler(BaseHTTPRequestHandler):
 
-    def _set_response(self):
+    def _set_response(self): # função para ajustar os headers a retornarem conteúdo em formato HTML.
         self.send_response(200)
         self.send_header('Access-Control-Allow-Origin', '*')
         self.send_header('Content-type', 'text/html')
         self.end_headers()
 
-    def _set_json_response(self):
+    def _set_json_response(self): # função para ajustar os headers a retornarem conteúdo em formato JSON.
         self.send_response(200)
         self.send_header('Access-Control-Allow-Origin', '*')
         self.send_header('Content-type', 'application/json')
@@ -40,17 +39,24 @@ class HttpServerHandler(BaseHTTPRequestHandler):
             self.wfile.write(json.dumps(sales).encode('utf-8'))
             return
 
-        if '/checkout' in self.path: # GET /checkout
-            products = json.loads(params['products'][0])
+        if '/checkout' in self.path: # POST /checkout
+            products = json.loads(params['products'][0]) # uma lista em formato JSON é recebida através do parâmetro 'products'.
             for p in products:
-                sale = int(p['sale'])
-                product = int(p['product'])
-                price = float(p['price'])
-                query = "checkout(%d, %d, %f)" % ( sale, product, price )
                 
-                pl.assertz(query)
-                pl.retractall("cart(%d)" % (product) )
+                sale = int(p['sale']) # recebe o ID único da venda gerado aleatoriamente.
+                
+                product = int(p['product']) # recebe o ID do produto
+                
+                price = float(p['price']) # recebe o preço do produto
+                
+                query = "checkout(%d, %d, %f)" % ( sale, product, price ) # estrutura a regra em prolog.
+                
+                pl.assertz(query) # executa a regra.
+                
+                pl.retractall("cart(%d)" % (product) ) # remove todos os produtos do carrinho com os IDs recebidos.
+                
                 logging.info("CHECKOUT %d - Product %d" % (sale, product))
+                
                 logging.info("CART (REMOVE) - %d", (product))
 
             self._set_response()
@@ -79,29 +85,47 @@ class HttpServerHandler(BaseHTTPRequestHandler):
             self.wfile.write(json.dumps(rating).encode('utf-8'))
             return
 
-        if '/stock' in self.path: # GET /stock - Params: product (id), method (inc | dec).
+        if '/stock' in self.path: # POST /stock - Params: product (id), method (inc | dec).
             pid = int(params['product'][0])
             action = params['action'][0]
             
-            if action == 'dec': # Removo produto do estoque e adiciono ao carrinho de compras.
-                query = "stock(%d, Price, Amount)" % (pid)
-                product = list(pl.query(query))
+            if action == 'dec': # ADICIONA O PRODUTO AO CARRINHO e remove do estoque.
+                
+                query = "stock(%d, Price, Amount)" % (pid) # monta-se a query com o ID do produto recebido.
+                
+                product = list(pl.query(query)) # obtem-se o produto pelo ID.
+                
                 if len(product) > 0:
-                    product = product[0]
+                    
+                    product = product[0] # atribui-se 'product[0]' a 'product', pois o resultado é um array.
+                    
                     logging.info("PRODUCT (ADD/CART): %s", product)
-                    pl.retractall("stock(%d, _, _)" % (pid))
+                    
+                    pl.retractall("stock(%d, _, _)" % (pid)) # remove o produto do "stock".                    
+                    
+                    # re-adiciona o produto ao "stock" com UM A MENOS de quantidade.
                     pl.assertz("stock(%d, %f, %d)" % (pid, float(product['Price']), int(product['Amount']) - 1))
-                    pl.assertz("cart(%d)" % (pid))
+                    
+                    pl.assertz("cart(%d)" % (pid)) # adiciona o ID do produto ao carrinho de compras.
             
-            elif action == 'inc': # Removo o produto do carrinho e adiciono ao estoque.
-                query = "stock(%d, Price, Amount)" % (pid)
-                product = list(pl.query(query))
+            elif action == 'inc': # REMOVE O PRODUTO DO CARRINHO e adiciono ao estoque.
+                
+                query = "stock(%d, Price, Amount)" % (pid) # monta-se a query com o ID do produto recebido.
+
+                product = list(pl.query(query)) # obtem-se o produto pelo ID.
+                
                 if len(product) > 0:
-                    product = product[0]
+
+                    product = product[0] # atribui-se 'product[0]' a 'product', pois o resultado é um array.
+
                     logging.info("PRODUCT (REMOVE/CART): %s", product)
-                    pl.retract("cart(%d)" % (pid))
-                    pl.retract("stock(%d, _, _)" % (pid))
+
+                    pl.retract("cart(%d)" % (pid)) # remove o produto com o ID recebido do carrinho.                    
+                    
+                    # re-adiciona o produto ao "stock" com UM A MAIS de quantidade.
                     pl.assertz("stock(%d, %f, %d)" % (pid, float(product['Price']), int(product['Amount']) + 1))
+
+                    pl.retract("stock(%d, _, _)" % (pid)) # remove o produto do "stock".
             
             self._set_response()
             return
@@ -112,27 +136,27 @@ class HttpServerHandler(BaseHTTPRequestHandler):
 
 # Initialization function for loading Prolog database into server memory.
 def initialization():
-    global pl
+    global pl # referenciando a instância global do objeto Prolog
     if isinstance(pl, Prolog):
-        file = open("./assets/database.pl", "r")
-        lines = file.read().split("\n")
+        file = open("./assets/database.pl", "r") # abre o arquivo "database.pl".
+        lines = file.read().split("\n") # lê linha a linha do arquivo...
 
         for i in range(0, len(lines)):
             assertion = lines[i].replace(").", ")")
-            if len(assertion) == 0:
+            if len(assertion) == 0: # pula as linhas em branco.
                 continue
-            pl.assertz(assertion)
+            pl.assertz(assertion) # executa uma regra lógica
         return True
     return False
 
 # Function for starting the HTTP server.
 def run(server_class = HTTPServer, handler_class = HttpServerHandler, port = 4000):
     logging.basicConfig(level=logging.INFO)
-    server_address = ('', port)
-    httpd = server_class(server_address, handler_class)
+    server_address = ('', port) # localhost:port.
+    httpd = server_class(server_address, handler_class) # cria a instância do servidor utilizando a classe HttpServerHandler
     logging.info("Starting HTTP server in port %d" % port)
     try:
-        httpd.serve_forever()
+        httpd.serve_forever() # coloca o servidor em loop, à espera de requisições.
     except KeyboardInterrupt:
         pass
     httpd.server_close()

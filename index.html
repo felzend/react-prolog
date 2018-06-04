@@ -115,18 +115,19 @@
                         },
                         checkout: function() {
                             if( cart.length === 0 || Object.keys(cart).length === 0 ) return;
-                            $.get(this.fetchUrl + "/cart", response => {
+                            $.get(this.fetchUrl + "/cart", response => { // Obtem-se a lista de produtos do carrinho de compras.
                                 let products = [ ];
                                 let saleId = this.randomInteger( this.randomInteger(1, 10000), this.randomInteger(22000, 9000000) ); // Mad Random Sale ID.
                                 
                                 response.forEach(product => {
-                                    products.push({
+                                    products.push({ // Organiza os dados dos produtos do carrinho de compras associados ao ID da venda e seu valor.
                                         sale: saleId,
                                         product: product.Id,
                                         price: product.Price.toFixed(2),
                                     });                                    
                                 });
-
+                                
+                                // Envia requisição para venda e atualiza os produtos do carrinho de compras.
                                 $.get(this.fetchUrl + "/checkout", { products: JSON.stringify(products) }, response => {
                                     this.fetchCart();
                                 });
