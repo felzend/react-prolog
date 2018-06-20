@@ -1,5 +1,6 @@
 import logging
 import json
+import cgi
 
 from urllib.parse import urlparse, parse_qs
 from pyswip import Prolog
@@ -13,20 +14,24 @@ class HttpServerHandler(BaseHTTPRequestHandler):
     def _set_response(self): # função para ajustar os headers a retornarem conteúdo em formato HTML.
         self.send_response(200)
         self.send_header('Access-Control-Allow-Origin', '*')
+        self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
+        self.send_header("Access-Control-Allow-Headers", "X-Requested-With")
         self.send_header('Content-type', 'text/html')
         self.end_headers()
 
     def _set_json_response(self): # função para ajustar os headers a retornarem conteúdo em formato JSON.
         self.send_response(200)
         self.send_header('Access-Control-Allow-Origin', '*')
+        self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
+        self.send_header("Access-Control-Allow-Headers", "X-Requested-With")
         self.send_header('Content-type', 'application/json')
         self.end_headers()
 
     def do_GET(self):
         global pl
         params = parse_qs(urlparse(self.path).query)
-        logging.info("URL PARAMS: %s", params)
-        
+        logging.info("URL PARAMS (GET): %s", params)
+
         if self.path.startswith("/favicon.ico"):
             return
 
@@ -37,29 +42,6 @@ class HttpServerHandler(BaseHTTPRequestHandler):
                 sales = [ ]
             self._set_json_response()
             self.wfile.write(json.dumps(sales).encode('utf-8'))
-            return
-
-        if '/checkout' in self.path: # POST /checkout
-            products = json.loads(params['products'][0]) # uma lista em formato JSON é recebida através do parâmetro 'products'.
-            for p in products:
-                
-                sale = int(p['sale']) # recebe o ID único da venda gerado aleatoriamente.
-                
-                product = int(p['product']) # recebe o ID do produto
-                
-                price = float(p['price']) # recebe o preço do produto
-                
-                query = "checkout(%d, %d, %f)" % ( sale, product, price ) # estrutura a regra em prolog.
-                
-                pl.assertz(query) # executa a regra.
-                
-                pl.retractall("cart(%d)" % (product) ) # remove todos os produtos do carrinho com os IDs recebidos.
-                
-                logging.info("CHECKOUT %d - Product %d" % (sale, product))
-                
-                logging.info("CART (REMOVE) - %d", (product))
-
-            self._set_response()
             return
 
         if '/cart' in self.path: # GET /cart
@@ -85,53 +67,99 @@ class HttpServerHandler(BaseHTTPRequestHandler):
             self.wfile.write(json.dumps(rating).encode('utf-8'))
             return
 
+        self._set_response()
+        self.wfile.write("Prolog API's index.".format(self.path).encode('utf-8'))
+        return
+
+    def do_POST(self):
+        global pl
+
+        form = cgi.FieldStorage(
+            fp=self.rfile,
+            headers=self.headers,
+            environ={'REQUEST_METHOD':'POST',
+            'CONTENT_TYPE':'application/json',#self.headers['Content-Type'],
+        })
+
+        if self.path.startswith("/favicon.ico"):
+            return
+
+        if '/checkout' in self.path: # POST /checkout
+            products = json.loads(form.getvalue('products')) # uma lista em formato JSON é recebida através do parâmetro 'products'.
+            for p in products:
+
+                sale = int(p['sale']) # recebe o ID único da venda gerado aleatoriamente.
+
+                product = int(p['product']) # recebe o ID do produto
+
+                price = float(p['price']) # recebe o preço do produto
+
+                query = "checkout(%d, %d, %f)" % ( sale, product, price ) # estrutura a regra em prolog.
+
+                pl.assertz(query) # executa a regra.
+
+                pl.retractall("cart(%d)" % (product) ) # remove todos os produtos do carrinho com os IDs recebidos.
+
+                logging.info("CHECKOUT %d - Product %d" % (sale, product))
+
+                logging.info("CART (REMOVE) - %d", (product))
+
+            self._set_response()
+            return
+
         if '/stock' in self.path: # POST /stock - Params: product (id), method (inc | dec).
-            pid = int(params['product'][0])
-            action = params['action'][0]
-            
+
+            pid = int(form.getvalue('product'))
+            action = form.getvalue('action')
+
             if action == 'dec': # ADICIONA O PRODUTO AO CARRINHO e remove do estoque.
-                
-                query = "stock(%d, Price, Amount)" % (pid) # monta-se a query com o ID do produto recebido.
-                
-                product = list(pl.query(query)) # obtem-se o produto pelo ID.
-                
-                if len(product) > 0:
-                    
-                    product = product[0] # atribui-se 'product[0]' a 'product', pois o resultado é um array.
-                    
-                    logging.info("PRODUCT (ADD/CART): %s", product)
-                    
-                    pl.retractall("stock(%d, _, _)" % (pid)) # remove o produto do "stock".                    
-                    
-                    # re-adiciona o produto ao "stock" com UM A MENOS de quantidade.
-                    pl.assertz("stock(%d, %f, %d)" % (pid, float(product['Price']), int(product['Amount']) - 1))
-                    
-                    pl.assertz("cart(%d)" % (pid)) # adiciona o ID do produto ao carrinho de compras.
-            
-            elif action == 'inc': # REMOVE O PRODUTO DO CARRINHO e adiciono ao estoque.
-                
+
                 query = "stock(%d, Price, Amount)" % (pid) # monta-se a query com o ID do produto recebido.
 
                 product = list(pl.query(query)) # obtem-se o produto pelo ID.
-                
+
+                if len(product) > 0:
+
+                    product = product[0] # atribui-se 'product[0]' a 'product', pois o resultado é um array.
+
+                    logging.info("PRODUCT (ADD/CART): %s", product)
+
+                    pl.retractall("stock(%d, _, _)" % (pid)) # remove o produto do "stock".
+
+                    # re-adiciona o produto ao "stock" com UM A MENOS de quantidade.
+                    pl.assertz("stock(%d, %f, %d)" % (pid, float(product['Price']), int(product['Amount']) - 1))
+
+                    pl.assertz("cart(%d)" % (pid)) # adiciona o ID do produto ao carrinho de compras.
+
+            elif action == 'inc': # REMOVE O PRODUTO DO CARRINHO e adiciono ao estoque.
+
+                query = "stock(%d, Price, Amount)" % (pid) # monta-se a query com o ID do produto recebido.
+
+                product = list(pl.query(query)) # obtem-se o produto pelo ID.
+
                 if len(product) > 0:
 
                     product = product[0] # atribui-se 'product[0]' a 'product', pois o resultado é um array.
 
                     logging.info("PRODUCT (REMOVE/CART): %s", product)
 
-                    pl.retract("cart(%d)" % (pid)) # remove o produto com o ID recebido do carrinho.                    
-                    
+                    pl.retract("cart(%d)" % (pid)) # remove o produto com o ID recebido do carrinho.
+
                     # re-adiciona o produto ao "stock" com UM A MAIS de quantidade.
                     pl.assertz("stock(%d, %f, %d)" % (pid, float(product['Price']), int(product['Amount']) + 1))
 
                     pl.retract("stock(%d, _, _)" % (pid)) # remove o produto do "stock".
-            
-            self._set_response()
+
+            self._set_json_response()
+            #self.wfile.write("{}")
             return
 
-        self._set_response()
-        self.wfile.write("Prolog API's index.".format(self.path).encode('utf-8'))
+    def do_OPTIONS(self):
+        self.send_response(202)
+        self.send_header('Access-Control-Allow-Origin', '*')
+        self.send_header('Access-Control-Allow-Headers', 'Content-Type')
+        self.send_header('Access-Control-Allow-Methods', 'x-http-method-override, POST')
+        self.end_headers()
         return
 
 # Initialization function for loading Prolog database into server memory.
