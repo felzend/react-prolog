@@ -27,6 +27,14 @@ class HttpServerHandler(BaseHTTPRequestHandler):
         self.send_header('Content-type', 'application/json')
         self.end_headers()
 
+    def do_OPTIONS(self):
+        self.send_response(200, "ok")
+        self.send_header('Access-Control-Allow-Origin', '*')                
+        self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
+        self.send_header("Access-Control-Allow-Headers", "Content-Type, X-Requested-With")
+        self.end_headers()
+        return
+
     def do_GET(self):
         global pl
         params = parse_qs(urlparse(self.path).query)
@@ -70,16 +78,13 @@ class HttpServerHandler(BaseHTTPRequestHandler):
         self._set_response()
         self.wfile.write("Prolog API's index.".format(self.path).encode('utf-8'))
         return
-
+    
     def do_POST(self):
         global pl
 
-        form = cgi.FieldStorage(
-            fp=self.rfile,
-            headers=self.headers,
-            environ={'REQUEST_METHOD':'POST',
-            'CONTENT_TYPE':'application/json',#self.headers['Content-Type'],
-        })
+        content_len = int(self.headers.get('content-length'))
+        post_body = self.rfile.read(content_len)
+        form = json.loads(post_body.decode())
 
         if self.path.startswith("/favicon.ico"):
             return
@@ -109,8 +114,8 @@ class HttpServerHandler(BaseHTTPRequestHandler):
 
         if '/stock' in self.path: # POST /stock - Params: product (id), method (inc | dec).
 
-            pid = int(form.getvalue('product'))
-            action = form.getvalue('action')
+            pid = int(form['product'])
+            action = form['action']
 
             if action == 'dec': # ADICIONA O PRODUTO AO CARRINHO e remove do estoque.
 
@@ -150,17 +155,16 @@ class HttpServerHandler(BaseHTTPRequestHandler):
 
                     pl.retract("stock(%d, _, _)" % (pid)) # remove o produto do "stock".
 
-            self._set_json_response()
-            #self.wfile.write("{}")
-            return
+                    self.wfile.write()
+            
+            query = "cart(Id, Name, Photo, Price), Id > -1"
+            products = list(pl.query(query))
+            if len(products) == 0:
+                products = [ ]
 
-    def do_OPTIONS(self):
-        self.send_response(202)
-        self.send_header('Access-Control-Allow-Origin', '*')
-        self.send_header('Access-Control-Allow-Headers', 'Content-Type')
-        self.send_header('Access-Control-Allow-Methods', 'x-http-method-override, POST')
-        self.end_headers()
-        return
+            self._set_json_response()
+            self.wfile.write(json.dumps(products).encode('utf-8'))
+            return
 
 # Initialization function for loading Prolog database into server memory.
 def initialization():
